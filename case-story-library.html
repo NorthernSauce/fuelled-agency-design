@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building a story-driven content library, in one shoot. — Fuelled Agency</title>
+  <meta name="description" content="One day. One brand. Every layer of the story captured. A hundred-plus assets across five channels, all from a single shoot day. Case study from Fuelled Agency." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-orb" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============================================================
+     MOBILE MENU — identical to homepage / service page
+     ============================================================ -->
+<aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__bg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata">
+      <source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="mobile-menu__overlay" aria-hidden="true"></div>
+
+  <div class="mobile-menu__inner">
+    <div class="mobile-menu__top">
+      <a href="index.html" aria-label="Fuelled Agency home"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" /></a>
+      <button class="nav-toggle is-active" id="mobile-menu-close" aria-label="Close menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Mobile primary">
+      <a href="what-we-do.html" class="mobile-menu__link">
+        <span class="mobile-menu__link-num">01</span>
+        <span class="mobile-menu__link-text">What we do</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="our-work.html" class="mobile-menu__link is-current">
+        <span class="mobile-menu__link-num">02</span>
+        <span class="mobile-menu__link-text">Our work</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="about.html" class="mobile-menu__link">
+        <span class="mobile-menu__link-num">03</span>
+        <span class="mobile-menu__link-text">About</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="learning-hub.html" class="mobile-menu__link">
+        <span class="mobile-menu__link-num">04</span>
+        <span class="mobile-menu__link-text">Learning Hub</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </nav>
+
+    <div class="mobile-menu__cta">
+      <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+    </div>
+
+    <button class="mm-testimonial" id="mm-testimonial" aria-label="Watch a client story">
+      <span class="mm-testimonial__media">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
+        </video>
+      </span>
+      <span class="mm-testimonial__content">
+        <span class="mm-testimonial__eyebrow">Watch a story</span>
+        <span class="mm-testimonial__quote">"They didn't just turn up with cameras. They helped me build a proper strategy."</span>
+        <span class="mm-testimonial__attr">Jerry &middot; Mox Spot</span>
+      </span>
+    </button>
+
+    <footer class="mobile-menu__footer">
+      <a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a>
+      <div class="mobile-menu__social">
+        <a href="https://www.instagram.com/fuelledagency" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/Fuelledagency/" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/@fuelledagency" aria-label="TikTok">TT</a>
+        <a href="https://www.linkedin.com/company/fuelled-agency" aria-label="LinkedIn">LI</a>
+      </div>
+    </footer>
+  </div>
+</aside>
+
+<!-- ============== CASE HERO — full-bleed image, monumental title overlaid ============== -->
+<section class="case-hero">
+  <div class="case-hero__bg" aria-hidden="true">
+    <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-L1006234-scaled.jpg" alt="" />
+    <div class="case-hero__bg-grade"></div>
+  </div>
+
+  <header class="site-header site-header--solid">
+    <div class="wrap site-header__inner">
+      <a href="index.html" class="brand" aria-label="Fuelled Agency home">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" />
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="what-we-do.html" class="nav-link">What we do</a>
+        <a href="our-work.html" class="nav-link is-current">Our work</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="learning-hub.html" class="nav-link">Learning Hub</a>
+        <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <span class="case-hero__rotate" aria-hidden="true">Fuelled / Our Work / 01</span>
+
+  <div class="wrap case-hero__inner">
+    <a href="our-work.html" class="case-hero__back">
+      <span class="case-hero__back-arrow" aria-hidden="true">&larr;</span>
+      Back to all work
+    </a>
+
+    <div class="case-hero__tags">
+      <span>Brand &amp; Social Strategy</span>
+      <span class="case-hero__tag-dot" aria-hidden="true"></span>
+      <span>Content Creation</span>
+      <span class="case-hero__tag-dot" aria-hidden="true"></span>
+      <span>Social Media Management</span>
+    </div>
+
+    <h1 class="case-hero__headline reveal">
+      Building a story-driven
+      <em>content library,</em>
+      in one shoot.
+    </h1>
+
+    <p class="case-hero__sub reveal">
+      One carefully planned day. Every layer of the brand captured. <em>Months of marketing, ready to ship.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ============== STATS TRIO — monumental Playfair numerals ============== -->
+<section class="case-stats">
+  <div class="wrap">
+    <div class="case-stats__grid">
+      <article class="case-stat reveal">
+        <span class="case-stat__num"><em>100<sup>+</sup></em></span>
+        <span class="case-stat__label">Assets created</span>
+        <span class="case-stat__sub">From one content day</span>
+      </article>
+      <article class="case-stat reveal" style="--reveal-delay: 100ms;">
+        <span class="case-stat__num"><em>5</em></span>
+        <span class="case-stat__label">Channels covered</span>
+        <span class="case-stat__sub">Website. Social. Product. Events. Personal brand.</span>
+      </article>
+      <article class="case-stat reveal" style="--reveal-delay: 200ms;">
+        <span class="case-stat__num"><em>1</em></span>
+        <span class="case-stat__label">Shoot day</span>
+        <span class="case-stat__sub">Months of marketing, made in a day</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== THE BRIEF — editorial intro on cream ============== -->
+<section class="case-brief">
+  <div class="wrap case-brief__inner">
+    <div class="case-brief__head reveal">
+      <span class="eyebrow">The brief</span>
+      <h2>Content starts <em>before the camera turns on.</em></h2>
+    </div>
+    <div class="case-brief__body reveal">
+      <p>The most valuable content is shaped long before the lens opens. The client didn't want a few photos and a couple of videos. They needed content that could carry the website, drive product sales, fill the events calendar, and tell the founder's story. <em>One brand, four very different jobs.</em></p>
+      <p>Instead of four separate shoots, we designed a single day that would tell the whole story. Every scene engineered to produce multiple usable assets across multiple channels.</p>
+      <ul class="case-brief__list">
+        <li>Website visuals</li>
+        <li>Product-led sales content</li>
+        <li>Event promotion</li>
+        <li>Personal brand storytelling</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FULL-BLEED FEATURE IMAGE — break beat ============== -->
+<section class="case-feature">
+  <div class="case-feature__media reveal">
+    <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-L1006288-scaled.jpg" alt="Lifestyle social media content shoot in Mallorca, capturing artisan product tasting" />
+    <div class="case-feature__caption">
+      <span class="case-feature__caption-eye">On location</span>
+      <span class="case-feature__caption-line">Mallorca · artisan tasting · lifestyle</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== THE 3 STEPS — alternating layout ============== -->
+<section class="case-steps">
+  <div class="wrap">
+    <div class="case-steps__head reveal">
+      <span class="eyebrow">How it ran</span>
+      <h2>Three moves. <em>One day. The whole story.</em></h2>
+    </div>
+
+    <article class="case-step reveal" data-step="01">
+      <div class="case-step__media">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-IMG_6209-768x1248.jpg" alt="Mood board planning for a content shoot day, capturing tone and atmosphere" />
+      </div>
+      <div class="case-step__body">
+        <span class="case-step__num">01</span>
+        <h3>The mood board.</h3>
+        <p class="case-step__lede">Every project starts here. Not a Pinterest scrape. A creative-direction document that tells everyone in the room what we're making and how it should feel.</p>
+        <ul class="case-step__list">
+          <li>Atmosphere the brand should carry</li>
+          <li>Textures, colours and environments that feel real</li>
+          <li>Emotional tone of the work</li>
+          <li>The balance between product, people, and place</li>
+        </ul>
+        <p>The aim was natural, grounded, experience-led. Visuals that read like the brand actually exists, not visuals that read like an ad.</p>
+      </div>
+    </article>
+
+    <article class="case-step case-step--reverse reveal" data-step="02" style="--reveal-delay: 80ms;">
+      <div class="case-step__media">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/L1006305-681x1024.jpg" alt="Personal branding portrait of the founder, captured during the same shoot day" />
+      </div>
+      <div class="case-step__body">
+        <span class="case-step__num">02</span>
+        <h3>Stories, not shots.</h3>
+        <p class="case-step__lede">We don't plan isolated images. We map scenes. Each scene engineered to generate multiple layers of content, all from one moment.</p>
+        <ul class="case-step__list case-step__list--grid">
+          <li><strong>Product content</strong> — website + product pages</li>
+          <li><strong>Environmental shots</strong> — atmosphere + lifestyle</li>
+          <li><strong>Event visuals</strong> — marketing for experiences</li>
+          <li><strong>Personal brand</strong> — humanising the founder</li>
+        </ul>
+        <p>One moment, captured well, becomes a reel, a still, a sales-page hero, and a founder portrait. That's how a hundred assets come from a single day.</p>
+      </div>
+    </article>
+
+    <article class="case-step reveal" data-step="03" style="--reveal-delay: 160ms;">
+      <div class="case-step__media">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-DSC00645-scaled.jpg" alt="Behind the scenes content shoot capturing natural interactions for hotel social media" />
+      </div>
+      <div class="case-step__body">
+        <span class="case-step__num">03</span>
+        <h3>Captured with intent.</h3>
+        <p class="case-step__lede">On the day, we work the planned scenes. Then we leave room for what the day actually wants to do.</p>
+        <ul class="case-step__list">
+          <li>Real conversations</li>
+          <li>Natural moments</li>
+          <li>Movement and atmosphere</li>
+        </ul>
+        <p>Those unscripted seconds usually make the strongest content. They show the brand as it actually exists. Not a staged advertisement. <em>The thing itself.</em></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============== GALLERY — asymmetric editorial grid ============== -->
+<section class="case-gallery">
+  <div class="wrap">
+    <div class="case-gallery__head reveal">
+      <span class="eyebrow">From the day</span>
+      <h2>One shoot. <em>A library of work.</em></h2>
+    </div>
+
+    <div class="case-gallery__grid reveal">
+      <figure class="case-gallery__item case-gallery__item--01">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-L1006234-scaled.jpg" alt="Premium social media product shot, experience-led" />
+        <figcaption>Product · website hero</figcaption>
+      </figure>
+      <figure class="case-gallery__item case-gallery__item--02">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-IMG_6209-768x1248.jpg" alt="Reels production for luxury lifestyle brand" />
+        <figcaption>Reels · luxury lifestyle</figcaption>
+      </figure>
+      <figure class="case-gallery__item case-gallery__item--03">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/L1006305-681x1024.jpg" alt="Personal branding portrait in black and white" />
+        <figcaption>Founder · personal brand</figcaption>
+      </figure>
+      <figure class="case-gallery__item case-gallery__item--04">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-L1006288-scaled.jpg" alt="Artisan product tasting in Mallorca, lifestyle marketing" />
+        <figcaption>Lifestyle · artisan tasting</figcaption>
+      </figure>
+      <figure class="case-gallery__item case-gallery__item--05">
+        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-DSC00645-scaled.jpg" alt="Behind the scenes hotel content shoot" />
+        <figcaption>Behind the scenes · hotel</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============== END CTA — same block as homepage ============== -->
+<section class="end-cta">
+  <div class="wrap">
+    <div class="end-cta__inner reveal">
+      <div>
+        <p class="eyebrow" style="margin-bottom: var(--sp-7);">Ready when you are</p>
+        <h2 class="end-cta__heading">
+          Want a year of content <em>from one shoot day?</em>
+        </h2>
+      </div>
+      <div class="end-cta__body">
+        <p class="end-cta__sub">
+          Thirty minutes on the phone. <em>We'll tell you straight whether content will move the needle for you</em>, before you've spent a penny. No proposal-by-stealth. No hard sell. If it isn't the right fit, we'll say so.
+        </p>
+        <div class="end-cta__ctas">
+          <a href="book-a-call.html" class="btn">Book a call <span class="arrow">&rarr;</span></a>
+          <a href="our-work.html" class="btn btn--ghost">See more work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER — identical to homepage / service page ============== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a href="index.html" aria-label="Fuelled Agency"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" /></a>
+        <p>Full-stack social production for owner-led businesses. Crew on site, founder on camera, strategy through edit through post as one package. From £475 a month.</p>
+        <div class="site-footer__brand-social">
+          <a href="https://www.instagram.com/fuelledagency" aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/Fuelledagency/" aria-label="Facebook">FB</a>
+          <a href="https://www.tiktok.com/@fuelledagency" aria-label="TikTok">TT</a>
+          <a href="https://www.linkedin.com/company/fuelled-agency" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="what-we-do.html">What we do</a></li>
+          <li><a href="our-work.html">Our work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="learning-hub.html">Learning Hub</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="book-a-call.html">Book a call</a></li>
+          <li><a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Where we work</h5>
+        <ul>
+          <li>UK · all regions</li>
+          <li>Europe · Mallorca, Mediterranean</li>
+          <li>Remote planning, on-site shoots</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>© Fuelled Media Ltd. Registered in England and Wales · Company no. 17070139</span>
+      <span><a href="/privacy-policy/">Privacy policy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a></span>
+    </div>
+
+    <p class="site-footer__wordmark" aria-hidden="true">Fuelled.</p>
+  </div>
+</footer>
+
+<script>
+  // Custom cursor
+  (function () {
+    const fine = window.matchMedia('(pointer: fine)').matches;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!fine || reduce) return;
+    const dot = document.querySelector('.cursor-dot');
+    const orb = document.querySelector('.cursor-orb');
+    if (!dot || !orb) return;
+    let mx = innerWidth/2, my = innerHeight/2, gx=mx, gy=my, raf=0;
+    const loop = () => {
+      gx += (mx-gx)*0.18; gy += (my-gy)*0.18;
+      dot.style.setProperty('--mx', mx+'px'); dot.style.setProperty('--my', my+'px');
+      orb.style.setProperty('--gx', gx+'px'); orb.style.setProperty('--gy', gy+'px');
+      raf = requestAnimationFrame(loop);
+    };
+    raf = requestAnimationFrame(loop);
+    addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
+    document.addEventListener('mouseleave', () => { dot.classList.add('is-out'); orb.classList.add('is-out'); });
+    document.addEventListener('mouseenter', () => { dot.classList.remove('is-out'); orb.classList.remove('is-out'); });
+    const sel = 'a, button, .btn, [role="button"], .case-gallery__item, .case-step';
+    document.addEventListener('mouseover', e => { if (e.target.closest(sel)) { dot.classList.add('is-active'); orb.classList.add('is-active'); } });
+    document.addEventListener('mouseout', e => { if (e.target.closest(sel) && !e.relatedTarget?.closest?.(sel)) { dot.classList.remove('is-active'); orb.classList.remove('is-active'); } });
+  })();
+
+  // Reveal observer
+  (function () {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  })();
+
+  // Parallax on case hero bg
+  (function () {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    const bgImg = document.querySelector('.case-hero__bg img');
+    if (!bgImg) return;
+    let raf = 0;
+    const apply = () => {
+      const y = scrollY;
+      bgImg.style.transform = `scale(1.1) translateY(${y * 0.18}px)`;
+      raf = 0;
+    };
+    addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(apply); }, { passive: true });
+  })();
+
+  // Mobile menu
+  (function () {
+    const t = document.getElementById('nav-toggle');
+    const c = document.getElementById('mobile-menu-close');
+    const m = document.getElementById('mobile-menu');
+    if (!t || !m) return;
+    const open = () => { m.classList.add('is-open'); m.setAttribute('aria-hidden','false'); t.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
+    const close = () => { m.classList.remove('is-open'); m.setAttribute('aria-hidden','true'); t.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+    t.addEventListener('click', open);
+    c?.addEventListener('click', close);
+    m.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && m.classList.contains('is-open')) close(); });
+  })();
+</script>
+
+</body>
+</html>
