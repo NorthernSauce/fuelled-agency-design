@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fuelled Agency. Real in life. Invisible online. We fix that.</title>
-  <meta name="description" content="Full-stack social production for owner-led businesses. Strategy, shoot, edit, post. One package, from £475 a month. Founder on camera, crew on site." />
+  <title>Fuelled Agency. A media company for marketing teams.</title>
+  <meta name="description" content="Strategy, production, paid, and measurement, run as your in-house team would. For marketing teams at £5m+ brands. From £2,475 a month." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,24 +14,24 @@
 </head>
 <body>
 
-<!-- Custom cursor — luminous teal orb + bright core. Hidden on touch devices via media query. -->
+<!-- Custom cursor - luminous teal orb + bright core. Hidden on touch devices via media query. -->
 <div class="cursor-orb" aria-hidden="true"></div>
 <div class="cursor-dot" aria-hidden="true"></div>
 
 <!-- ============================================================
-     MOBILE MENU — full-screen overlay with stagger reveal
+     MOBILE MENU - full-screen overlay with stagger reveal
      ============================================================ -->
 <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <div class="mobile-menu__bg" aria-hidden="true">
     <video autoplay muted loop playsinline preload="metadata">
-      <source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
+      <source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="mobile-menu__overlay" aria-hidden="true"></div>
 
   <div class="mobile-menu__inner">
     <div class="mobile-menu__top">
-      <a href="index.html" aria-label="Fuelled Agency home"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" /></a>
+      <a href="index.html" aria-label="Fuelled Agency home"><img src="../assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" /></a>
       <button class="nav-toggle is-active" id="mobile-menu-close" aria-label="Close menu">
         <span></span><span></span><span></span>
       </button>
@@ -43,31 +43,36 @@
         <span class="mobile-menu__link-text">What we do</span>
         <span class="arrow">&rarr;</span>
       </a>
-      <a href="our-work.html" class="mobile-menu__link">
+      <a href="service-options.html" class="mobile-menu__link">
         <span class="mobile-menu__link-num">02</span>
+        <span class="mobile-menu__link-text">Pricing</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="our-work.html" class="mobile-menu__link">
+        <span class="mobile-menu__link-num">03</span>
         <span class="mobile-menu__link-text">Our work</span>
         <span class="arrow">&rarr;</span>
       </a>
       <a href="about.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">03</span>
+        <span class="mobile-menu__link-num">04</span>
         <span class="mobile-menu__link-text">About</span>
         <span class="arrow">&rarr;</span>
       </a>
       <a href="learning-hub.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">04</span>
+        <span class="mobile-menu__link-num">05</span>
         <span class="mobile-menu__link-text">Learning Hub</span>
         <span class="arrow">&rarr;</span>
       </a>
     </nav>
 
     <div class="mobile-menu__cta">
-      <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+      <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
     </div>
 
     <button class="mm-testimonial" id="mm-testimonial" aria-label="Watch a client story">
       <span class="mm-testimonial__media">
         <video autoplay muted loop playsinline preload="metadata">
-          <source src="assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
+          <source src="../assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
         </video>
       </span>
       <span class="mm-testimonial__content">
@@ -89,7 +94,7 @@
   </div>
 </aside>
 
-<!-- ============== HERO — full-bleed blurred bg, centered headline, transparent nav ============== -->
+<!-- ============== HERO - full-bleed blurred bg, centered headline, transparent nav ============== -->
 <section class="hero">
   <div class="hero__media" aria-hidden="true">
     <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg" alt="" />
@@ -98,14 +103,15 @@
   <header class="site-header">
     <div class="wrap site-header__inner">
       <a href="index.html" class="brand" aria-label="Fuelled Agency home">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" />
+        <img src="../assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" />
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="what-we-do.html" class="nav-link">What we do</a>
+        <a href="service-options.html" class="nav-link">Pricing</a>
         <a href="our-work.html" class="nav-link">Our work</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="learning-hub.html" class="nav-link">Learning Hub</a>
-        <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+        <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
@@ -114,24 +120,23 @@
   </header>
 
   <div class="wrap hero__inner">
-    <span class="hero__badge">Social production for owner-led businesses</span>
+    <span class="hero__badge">A media company for marketing teams</span>
 
     <h1 class="hero__headline">
-      Real in life.
-      <em>Invisible online.</em>
-      <span class="lime">We fix that.</span>
+      Your marketing team's biggest headache
+      <em>is who runs your content.</em>
+      <span class="lime">We are who runs your content.</span>
     </h1>
 
     <div class="hero__trail" id="hero-trail" aria-hidden="true"></div>
 
     <p class="hero__sub">
-      Your business is great in real life. Your social media doesn&#39;t show that.
-      <em>We&#39;re the social partner that fixes it.</em> No new headcount. No long contracts.
+      You've tried freelancers. You've costed an in-house hire. You've signed off on one agency engagement you'd rather forget. <em>Content that books revenue still isn't running.</em> Let's fix that.
     </p>
 
     <div class="hero__ctas">
-      <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
-      <a href="our-work.html" class="btn btn--ghost">See the work</a>
+      <a href="#deck" class="btn">Download the deck <span class="arrow">&rarr;</span></a>
+      <a href="book-a-call.html" class="btn btn--ghost">Let's chat</a>
     </div>
 
     <div class="hero__rating">
@@ -141,10 +146,10 @@
   </div>
 </section>
 
-<!-- ============== TRUSTED BY — flush on page bg, heading left + ticker right ============== -->
+<!-- ============== TRUSTED BY - flush on page bg, heading left + ticker right ============== -->
 <section class="trusted">
   <div class="trusted__inner">
-    <p class="trusted__heading">The agency behind</p>
+    <p class="trusted__heading">Marketing teams at brands you already know</p>
     <div class="ticker">
       <div class="ticker__track">
       <img src="https://fuelledagency.com/wp-content/uploads/2026/02/visa-copy.png" alt="Visa" class="ticker__logo" />
@@ -173,35 +178,106 @@
   </div>
 </section>
 
-<!-- ============== POSITION ("Driving demand" equivalent) ============== -->
+<!-- ============== POSITION ============== -->
 <section class="position">
   <div class="wrap">
     <div class="position__inner reveal">
       <h2>
-        Built for businesses that want
-        <em>a brand,</em>
-        not just content.
+        Built for marketing teams stuck between
+        <em>a freelancer roster</em>
+        and a hire they can't afford.
       </h2>
       <div class="position__sidebar">
         <p>
-          Big agencies talk to marketing teams you don&#39;t have. Cheap freelancers chase trends that disappear by Thursday. Nobody else builds a content system around your actual business goals and holds it accountable to them. <em>That&#39;s our lane.</em>
+          Big agencies hand you to junior staff juggling six other clients. Cheap freelancers caption and schedule and ghost. A senior in-house hire costs £45k loaded, ramps for six months, and still can't direct a shoot. <em>We are the fourth option.</em> Strategy, production, paid, and measurement, run as your team.
         </p>
         <div class="ctas">
-          <a href="about.html" class="btn btn--dark">Our story <span class="arrow">&rarr;</span></a>
-          <a href="what-we-do.html" class="btn btn--ghost">Our service</a>
+          <a href="#deck" class="btn btn--dark">Download the deck <span class="arrow">&rarr;</span></a>
+          <a href="book-a-call.html" class="btn btn--ghost">Let's chat</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============== FEATURED WORK — bento grid, image-led ============== -->
+<!-- ============== FIVE STEPS - moved from how-we-work, video testimonial slot ============== -->
+<section class="fivesteps">
+  <div class="wrap">
+    <div class="fivesteps__head reveal">
+      <p class="eyebrow">The Five-Step Plug-In</p>
+      <h2 class="fivesteps__title">Five steps. One team. <em>No handoffs.</em></h2>
+      <p class="fivesteps__sub">One strategy. One brief. One bill.</p>
+      <p class="fivesteps__lede">
+        The freelancer model breaks the minute somebody goes on holiday. The agency model bills by deliverable. The in-house model can't be staffed at premium production quality without burning your headcount budget. <em>We replace the lot with one team you brief once.</em>
+      </p>
+    </div>
+
+    <div class="fivesteps__body reveal">
+      <ol class="fivesteps__list">
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">01</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Strategy <em>that names the revenue, not the reach.</em></h3>
+            <p>Before any camera comes out, we agree the commercial outcome, the audience, and the measurement. The strategy doc is yours from day one.</p>
+          </div>
+        </li>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">02</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Shoot <em>that's directed, not vibed.</em></h3>
+            <p>Lean crew, full kit, agreed shot list. Steve and Lisa direct, or one of the roster leads who knows the brief inside out.</p>
+          </div>
+        </li>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">03</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Edit <em>cut to the outcome.</em></h3>
+            <p>In-house edit suite. Final Cut, Premiere, CapCut, retouching. Every asset cut to its destination platform and approval-routed before publish.</p>
+          </div>
+        </li>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">04</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Post <em>on cadence. Not at midnight.</em></h3>
+            <p>Scheduled across the platforms that matter. Captions, hashtags, swipe copy. Paid layered on top where the strategy calls for it. You see every post before it ships.</p>
+          </div>
+        </li>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">05</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Improve <em>reported to the CFO.</em></h3>
+            <p>Monthly review against the strategy. Attribution disclosed. What worked. What didn't. What we're changing next month. The deck you take upstairs.</p>
+          </div>
+        </li>
+      </ol>
+
+      <aside class="fivesteps__witness">
+        <div class="fivesteps__witness-media">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="../assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
+          </video>
+          <span class="fivesteps__witness-play" aria-hidden="true">▶</span>
+          <span class="fivesteps__witness-eyebrow">Watch a client story</span>
+        </div>
+        <figcaption class="fivesteps__witness-caption">
+          <blockquote>"They didn't just turn up with cameras. They helped me build a proper strategy for how to market the days, attract the right drivers and create excitement before we even opened bookings."</blockquote>
+          <div class="fivesteps__witness-attr">
+            <img class="fivesteps__witness-avatar" src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.42.16-300x260.png" alt="Jerry" />
+            <span><strong>Jerry</strong> &middot; Mox Spot, North Wales</span>
+          </div>
+        </figcaption>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURED WORK - bento grid, image-led ============== -->
 <section class="work">
   <div class="wrap">
     <div class="work__head reveal">
       <div>
         <p class="eyebrow">Featured work</p>
-        <h2>Real businesses, <em>finally visible online.</em></h2>
+        <h2>Real campaigns. <em>Numbers your CFO can check.</em></h2>
       </div>
       <a href="our-work.html" class="btn btn--ghost">View all case studies <span class="arrow">&rarr;</span></a>
     </div>
@@ -210,7 +286,7 @@
       <a href="case-story-library.html" class="bento-card bento-card--lead reveal">
         <img src="https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-L1006234-scaled.jpg" alt="One shoot day yielding a full library of brand content across web, product, events and personal brand" class="bento-card__img" />
         <div class="bento-card__caption">
-          <span class="bento-card__sector">Lifestyle · 100+ assets</span>
+          <span class="bento-card__sector">Lifestyle &middot; 100+ assets</span>
           <span class="bento-card__title">A story-driven content library, built in one shoot day.</span>
           <span class="bento-card__more">Read the case study <span class="arrow">&rarr;</span></span>
         </div>
@@ -219,8 +295,8 @@
       <a href="case-human-led-visibility.html" class="bento-card bento-card--portrait reveal" style="--reveal-delay: 80ms;">
         <img src="https://fuelledagency.com/wp-content/uploads/2026/02/1-2.jpg" alt="Founder-led content shoot for a Spain relocation brand" class="bento-card__img" />
         <div class="bento-card__caption">
-          <span class="bento-card__sector">Relocation · Spain</span>
-          <span class="bento-card__title">Human-led content. Qualified demand, not noise.</span>
+          <span class="bento-card__sector">Hospitality &middot; Spain</span>
+          <span class="bento-card__title">Human-led content. Click-through followed.</span>
           <span class="bento-card__more">Read the case study <span class="arrow">&rarr;</span></span>
         </div>
       </a>
@@ -228,16 +304,16 @@
       <a href="case-search-led-tiktok.html" class="bento-card bento-card--wide reveal" style="--reveal-delay: 160ms;">
         <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Heli-2048x1944.jpg" alt="Aviation training brand on the airfield, TikTok shoot day" class="bento-card__img" />
         <div class="bento-card__caption">
-          <span class="bento-card__sector">Aviation · TikTok · 30 days</span>
-          <span class="bento-card__title">Search-led TikTok. 68.7K views. Zero paid spend.</span>
+          <span class="bento-card__sector">Aviation &middot; TikTok &middot; 30 days</span>
+          <span class="bento-card__title">68.7K post views. Zero paid spend.</span>
         </div>
       </a>
 
       <a href="case-documentary-authority.html" class="bento-card bento-card--standard reveal" style="--reveal-delay: 240ms;">
         <img src="https://fuelledagency.com/wp-content/uploads/2026/02/2.jpg" alt="Documentary-style content shoot with a luxury yachting brand" class="bento-card__img" />
         <div class="bento-card__caption">
-          <span class="bento-card__sector">Luxury Yachting · Documentary</span>
-          <span class="bento-card__title">One documentary edit. 18.7K organic views in ten days.</span>
+          <span class="bento-card__sector">Luxury yachting &middot; documentary</span>
+          <span class="bento-card__title">18.7K organic views in ten days.</span>
         </div>
       </a>
     </div>
@@ -248,177 +324,124 @@
   </div>
 </section>
 
-<!-- ============== STATS STRIP — real numbers from published case studies ============== -->
-<section class="stats-strip">
+<!-- ============== IN-HOUSE MATHS - asymmetric receipt + punch block ============== -->
+<section class="imaths">
   <div class="wrap">
-    <div class="stats-strip__head reveal">
-      <div>
-        <p class="eyebrow">The proof, in numbers</p>
-        <h2>Big wins. <em>From real shoot days.</em></h2>
-      </div>
-      <p class="stats-strip__head__lede">Every number below is from a published case study. <em>Zero paid spend behind any of them.</em> The full breakdowns live in the Learning Hub.</p>
-    </div>
+    <header class="imaths__head reveal">
+      <p class="eyebrow imaths__eyebrow">The HR quote you've already costed</p>
+      <h2 class="imaths__title">Two juniors. <em>£52,000 in base salary alone.</em></h2>
+      <p class="imaths__lede">Before you've kitted them out, recruited them, paid the on-costs, or had the conversation when one of them leaves.</p>
+    </header>
 
-    <div class="stats-strip__grid reveal">
-      <a href="https://fuelledagency.com/learning-hub/content-creation-and-search-led-social-strategy-on-tiktok/" class="stat-tile">
-        <span class="stat-tile__eyebrow">TikTok · Aviation</span>
-        <span class="stat-tile__num">68.7<span class="stat-tile__num-suffix">K</span></span>
-        <span class="stat-tile__label">Post views in the first 30 days, fully organic.</span>
-        <span class="stat-tile__attr">The Helicopter Centre</span>
-      </a>
+    <div class="imaths__grid reveal">
 
-      <a href="https://fuelledagency.com/learning-hub/human-led-visibility-driving-qualified-demand/" class="stat-tile">
-        <span class="stat-tile__eyebrow">Hospitality · Spain</span>
-        <span class="stat-tile__num">128<span class="stat-tile__num-suffix">%</span></span>
-        <span class="stat-tile__label">Lift in clicks once human-led content went live.</span>
-        <span class="stat-tile__attr">Expat relocation client</span>
-      </a>
+      <!-- LEFT: receipt-style maths column - "Going in-house" side -->
+      <figure class="imaths__receipt">
+        <figcaption class="imaths__receipt-head">
+          <span class="imaths__col-tag imaths__col-tag--inhouse">Going in-house</span>
+          <span class="imaths__receipt-sub">What you've quietly committed to.</span>
+        </figcaption>
+        <dl class="imaths__receipt-list">
+          <div class="imaths__row">
+            <dt>Two junior hires</dt>
+            <dd class="imaths__row-val">£52,000</dd>
+          </div>
+          <div class="imaths__row imaths__row--soft">
+            <dt>Employer's NI</dt>
+            <dd class="imaths__row-val">+ £7,200</dd>
+          </div>
+          <div class="imaths__row imaths__row--soft">
+            <dt>Pension</dt>
+            <dd class="imaths__row-val">+ £1,600</dd>
+          </div>
+          <div class="imaths__row imaths__row--soft">
+            <dt>Software, kit, training</dt>
+            <dd class="imaths__row-val">+ £7,000</dd>
+          </div>
+          <div class="imaths__row imaths__row--soft">
+            <dt>Recruitment, sick days, day-one rights</dt>
+            <dd class="imaths__row-val">+ £4,500</dd>
+          </div>
+          <div class="imaths__row imaths__row--soft">
+            <dt>The moment one of them leaves, twelve months in</dt>
+            <dd class="imaths__row-val">+ unbudgeted</dd>
+          </div>
+          <div class="imaths__row imaths__row--total">
+            <dt>Loaded, before output</dt>
+            <dd class="imaths__row-val">£72,300+</dd>
+          </div>
+        </dl>
 
-      <a href="https://fuelledagency.com/learning-hub/building-brand-authority-through-documentary-style-content/" class="stat-tile">
-        <span class="stat-tile__eyebrow">Yachting · Mediterranean</span>
-        <span class="stat-tile__num">18.7<span class="stat-tile__num-suffix">K</span></span>
-        <span class="stat-tile__label">Organic views from one documentary edit. 88 new followers in 10 days.</span>
-        <span class="stat-tile__attr">Yachting brand case study</span>
-      </a>
+        <ul class="imaths__compare-list">
+          <li><span>Four-person in-house team, loaded</span><span class="imaths__compare-val">£190k - £250k</span></li>
+          <li><span>Senior creative director, plus bonus</span><span class="imaths__compare-val">£120k+</span></li>
+          <li><span>Big-name agency retainer</span><span class="imaths__compare-val">£48k+ / yr</span></li>
+        </ul>
+      </figure>
 
-      <a href="learning-hub.html" class="stat-tile">
-        <span class="stat-tile__eyebrow">Across every case</span>
-        <span class="stat-tile__num">£0</span>
-        <span class="stat-tile__label">Spent on paid promotion. The reach above is what good content does on its own.</span>
-        <span class="stat-tile__attr">All published cases</span>
-      </a>
+      <!-- "or" divider between the two cards (lives in its own grid track on desktop) -->
+      <span class="imaths__or" aria-hidden="true">or</span>
+
+      <!-- RIGHT: lime + dark punch block - "Going with Fuelled" side -->
+      <aside class="imaths__punch">
+        <div class="imaths__punch-head">
+          <span class="imaths__col-tag imaths__col-tag--fuelled">Going with Fuelled</span>
+          <span class="imaths__punch-headsub">What you'd pay us instead.</span>
+        </div>
+
+        <div class="imaths__punch-stamp">From</div>
+        <div class="imaths__punch-price">
+          <span class="imaths__punch-currency">£</span>2,475
+        </div>
+        <div class="imaths__punch-suffix">a month</div>
+
+        <p class="imaths__punch-body">Strategy. Production. Paid. Measurement. Run as your team.</p>
+
+        <ul class="imaths__punch-list">
+          <li>One brief, one team, one bill</li>
+          <li>Month's notice. Keep the strategy doc.</li>
+          <li>No 60-day clauses. No surprise media fees.</li>
+        </ul>
+
+        <a href="service-options.html" class="btn imaths__punch-cta">See what's included <span class="arrow">&rarr;</span></a>
+      </aside>
+
     </div>
   </div>
 </section>
 
-<!-- ============== OUR SERVICE — What Changes (3 outcome cards) ============== -->
-<section class="services" id="services">
-  <div class="wrap">
-    <div class="services__head reveal">
-      <p class="eyebrow">Our service</p>
-      <h2 class="services__title">Three things change. <em>The day we plug in.</em></h2>
-      <p class="services__sub">Forget the feature list. <em>This is what actually changes</em> the day we plug in.</p>
-    </div>
-
-    <div class="change-cards">
-      <!-- 01 — INBOX -->
-      <article class="change-card reveal">
-        <div class="change-card__mockup change-card__mockup--inbox">
-          <span class="change-card__mockup-pulse">3 new today</span>
-          <div class="msg">
-            <span class="msg__avatar">JM</span>
-            <span class="msg__content">
-              <span class="msg__name">@thejamiemcleod</span>
-              <span class="msg__text">Saw your reel. Taking on bookings?</span>
-            </span>
-            <span class="msg__time">2m</span>
-          </div>
-          <div class="msg">
-            <span class="msg__avatar">SC</span>
-            <span class="msg__content">
-              <span class="msg__name">@sarahcoffeehouse</span>
-              <span class="msg__text">Hey, loved the new content drop.</span>
-            </span>
-            <span class="msg__time">14m</span>
-          </div>
-          <div class="msg">
-            <span class="msg__avatar">RP</span>
-            <span class="msg__content">
-              <span class="msg__name">@rich_payne</span>
-              <span class="msg__text">Are you guys booking next month?</span>
-            </span>
-            <span class="msg__time">28m</span>
-          </div>
-        </div>
-        <div class="change-card__body">
-          <span class="change-card__num">01 &middot; Your inbox</span>
-          <h3 class="change-card__title">From silence to <em>"saw your reel."</em></h3>
-          <p class="change-card__sub">The wrong-fit enquiries stop. The right ones start landing, from people who already trust you before the first call.</p>
-        </div>
-      </article>
-
-      <!-- 02 — SUNDAYS -->
-      <article class="change-card reveal" style="--reveal-delay: 100ms;">
-        <div class="change-card__mockup change-card__mockup--calendar">
-          <span class="change-card__mockup-label">Your week</span>
-          <div class="cal-grid">
-            <div class="cal-day"><span class="cal-day__name">Mon</span><span class="cal-day__state">Run the business</span></div>
-            <div class="cal-day"><span class="cal-day__name">Tue</span><span class="cal-day__state">Run the business</span></div>
-            <div class="cal-day"><span class="cal-day__name">Wed</span><span class="cal-day__state">Run the business</span></div>
-            <div class="cal-day cal-day--shoot"><span class="cal-day__name">Thu</span><span class="cal-day__state">Shoot day &middot; 4 hrs</span></div>
-            <div class="cal-day"><span class="cal-day__name">Fri</span><span class="cal-day__state">Run the business</span></div>
-            <div class="cal-day cal-day--off"><span class="cal-day__name">Sat</span><span class="cal-day__state">Off</span></div>
-            <div class="cal-day cal-day--off"><span class="cal-day__name">Sun</span><span class="cal-day__state">Off</span></div>
-          </div>
-        </div>
-        <div class="change-card__body">
-          <span class="change-card__num">02 &middot; Your time</span>
-          <h3 class="change-card__title">Sundays back. <em>Phones back in pockets.</em></h3>
-          <p class="change-card__sub">One structured shoot day a month. The rest of the time we run it. You stop being the bottleneck. You stop being the camera operator.</p>
-        </div>
-      </article>
-
-      <!-- 03 — GRID -->
-      <article class="change-card reveal" style="--reveal-delay: 200ms;">
-        <div class="change-card__mockup change-card__mockup--grid">
-          <div class="ig-grid">
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/02/Copy-of-DSC08096.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/02/Girls.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/03/DJI_20260115103355_0560_D-scaled.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/02/Copy-of-DSC08096.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg');"></div>
-            <div class="ig-tile" style="background-image: url('https://fuelledagency.com/wp-content/uploads/2026/02/Girls.jpg');"></div>
-          </div>
-        </div>
-        <div class="change-card__body">
-          <span class="change-card__num">03 &middot; Your grid</span>
-          <h3 class="change-card__title">A feed that finally <em>looks like the business.</em></h3>
-          <p class="change-card__sub">Premium, on-brand, posted on cadence. Customers pass it around. Strangers stop to watch. The team is proud to share it.</p>
-        </div>
-      </article>
-    </div>
-
-    <p class="services__handoff reveal">
-      Three changes. One package. <em>Here&#39;s how we run it</em>
-    </p>
-  </div>
-</section>
-
-<!-- ============== HOW WE WORK — full-width press-play (Option 5) ============== -->
+<!-- ============== HOW WE WORK - full-width press-play ============== -->
 <section class="manifesto" id="manifesto">
   <div class="manifesto__pin">
     <div class="manifesto__media">
       <div class="manifesto__media-frame is-active" data-pill="0">
-        <video autoplay muted loop playsinline preload="metadata"><source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
       </div>
       <div class="manifesto__media-frame" data-pill="1">
-        <video autoplay muted loop playsinline preload="metadata"><source src="assets/6757713_Boat_Yacht_1920x1080.mp4" type="video/mp4" /></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="../assets/6757713_Boat_Yacht_1920x1080.mp4" type="video/mp4" /></video>
       </div>
       <div class="manifesto__media-frame" data-pill="2">
-        <video autoplay muted loop playsinline preload="metadata"><source src="assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" /></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="../assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" /></video>
       </div>
     </div>
     <div class="manifesto__overlay"></div>
 
     <div class="manifesto__inner">
     <div class="manifesto__top">
-      <span class="manifesto__eyebrow">Why us</span>
-      <h2 class="manifesto__title">How we work, <em>cut differently.</em></h2>
-      <p class="manifesto__sub">A full social partner that runs the strategy, the shoot, and the posting. <em>Three things we do that nobody else in this lane does.</em></p>
+      <span class="manifesto__eyebrow">Cut differently</span>
+      <h2 class="manifesto__title">Tactical Drift is what broke <em>your last three content engagements.</em></h2>
+      <p class="manifesto__sub">Six tools running ideation. Three freelancers writing captions in three different voices. A content calendar nobody owns. <em>Three things we do differently.</em></p>
     </div>
 
     <div class="manifesto__pills" id="manifesto-pills">
       <button class="manifesto__pill is-active" data-pill="0">
         <span class="manifesto__pill-num">01</span>
         <span class="manifesto__pill-headline">
-          <span class="manifesto__pill-tag">Owner-led</span>
-          <span class="manifesto__pill-title">No middlemen.</span>
+          <span class="manifesto__pill-tag">Centrally directed</span>
+          <span class="manifesto__pill-title">One brief. One voice.</span>
         </span>
         <span class="manifesto__pill-arrow">&rarr;</span>
-        <div class="manifesto__pill-detail"><div>Strategy and direction sit with the founders, not an account team you&#39;ll never meet. We build the plan around your business goals, then a lean crew or a trusted creator on our roster executes it to that brief. You always know whose name is on the work.</div></div>
+        <div class="manifesto__pill-detail"><div>Strategy and direction sit with Steve and Lisa. Execution sits with the roster, briefed by us. You brief once. Multi-market, multi-platform, one through-line.</div></div>
       </button>
 
       <button class="manifesto__pill" data-pill="1">
@@ -428,28 +451,28 @@
           <span class="manifesto__pill-title">Crew on site.</span>
         </span>
         <span class="manifesto__pill-arrow">&rarr;</span>
-        <div class="manifesto__pill-detail"><div>A lean crew turns up with the plan already agreed. Cameras, lighting, shot list, strategy. No bloated production company, no on-the-day improvising. We&#39;re there to execute, with you on camera.</div></div>
+        <div class="manifesto__pill-detail"><div>A crew turns up with the plan already written. Cameras, lighting, shot list, strategy. No bloated production company, no on-the-day improvising. We&#39;re there to execute, not to busk it.</div></div>
       </button>
 
       <button class="manifesto__pill" data-pill="2">
         <span class="manifesto__pill-num">03</span>
         <span class="manifesto__pill-headline">
-          <span class="manifesto__pill-tag">One price</span>
-          <span class="manifesto__pill-title">No surprises.</span>
+          <span class="manifesto__pill-tag">Transparent pricing</span>
+          <span class="manifesto__pill-title">The number is on the site.</span>
         </span>
         <span class="manifesto__pill-arrow">&rarr;</span>
-        <div class="manifesto__pill-detail"><div>From &pound;475 a month for ongoing strategy and management. Full production days are quoted up front, so you see the number on the call. No surprise media fees. No 60-day notice clauses. No &ldquo;it depends&rdquo; answers.</div></div>
+        <div class="manifesto__pill-detail"><div>From &pound;2,475 a month. Full production days quoted up front, so you see the number on the call. No surprise media fees. No 60-day notice clauses. No &ldquo;it depends&rdquo; answers.</div></div>
       </button>
     </div>
   </div>
   </div>
 </section>
 
-<!-- ============== TESTIMONIALS — bento wall (video + text mix) ============== -->
+<!-- ============== TESTIMONIALS - bento wall (video + text mix) ============== -->
 <section class="quotes" id="quotes">
   <div class="quotes__head reveal">
     <div class="quotes__head-left">
-      <p class="eyebrow">From the owners we plug in for</p>
+      <p class="eyebrow">From the marketing teams we plug in for</p>
       <h2>Don&#39;t take our word for it. <em>Take theirs.</em></h2>
     </div>
     <a href="our-work.html" class="btn btn--ghost">All case studies <span class="arrow">&rarr;</span></a>
@@ -458,38 +481,35 @@
   <div class="qbento">
     <!-- FEATURED VIDEO -->
     <article class="qtile qtile--video qtile--featured qtile--clickable" data-testimonial="0">
-      <video autoplay muted loop playsinline preload="metadata"><source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
+      <video autoplay muted loop playsinline preload="metadata"><source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
       <span class="qtile__play" aria-hidden="true">▶</span>
       <div class="qtile__caption">
-        <span class="qtile__caption-eyebrow">Watch · 1:42</span>
+        <span class="qtile__caption-eyebrow">Watch &middot; 1:42</span>
         <p class="qtile__caption-quote">"They didn't just turn up with cameras. They helped me build a proper strategy for how to market the days, attract the right drivers and create excitement before we even opened bookings."</p>
         <p class="qtile__caption-attr"><img class="qtile-attr__avatar" src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.42.16-300x260.png" alt="Jerry" /><span><strong>Jerry</strong> &middot; Mox Spot, North Wales</span></p>
       </div>
     </article>
 
-    <!-- STATS TILE -->
-    <article class="qtile qtile--stats">
-      <div class="qtile__stat">
-        <span class="qtile__stars">★★★★★</span>
-        <span class="qtile__stat-num">4.9</span>
-        <span class="qtile__stat-label">Across Google reviews</span>
-      </div>
-      <p class="qtile__stat-foot">From owner-led businesses across the UK and Europe. Read every one.</p>
+    <!-- CLAIM TILE (replaces old stats tile per FEEDBACK 8) -->
+    <article class="qtile qtile--claim">
+      <span class="qtile__claim-eyebrow">The retainer of choice</span>
+      <p class="qtile__claim-headline">Marketing teams at <em>£5m&ndash;£50m brands</em> trust Fuelled to run content as a revenue line.</p>
+      <span class="qtile__claim-foot">UK and Europe. Hospitality, yachting, aviation, lifestyle, B2B.</span>
     </article>
 
     <!-- VIDEO 2 -->
     <article class="qtile qtile--video qtile--video-2 qtile--clickable" data-testimonial="1">
-      <video autoplay muted loop playsinline preload="metadata"><source src="assets/6757713_Boat_Yacht_1920x1080.mp4" type="video/mp4" /></video>
+      <video autoplay muted loop playsinline preload="metadata"><source src="../assets/6757713_Boat_Yacht_1920x1080.mp4" type="video/mp4" /></video>
       <span class="qtile__play" aria-hidden="true">▶</span>
       <div class="qtile__caption">
-        <span class="qtile__caption-eyebrow">Watch · 0:58</span>
+        <span class="qtile__caption-eyebrow">Watch &middot; 0:58</span>
         <p class="qtile__caption-attr"><img class="qtile-attr__avatar" src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.39.30-300x261.png" alt="Rory Dixon" /><strong>Rory Dixon</strong></p>
       </div>
     </article>
 
     <!-- TEXT 1 -->
     <figure class="qtile qtile--text qtile--text-1">
-      <blockquote>We've been working with Fuelled Agency for a while now, and they've consistently delivered. Their audits for YouTube and social media are detailed and actionable, giving us clear insight into what's working and what's not.</blockquote>
+      <blockquote>We&#39;ve been working with Fuelled Agency for a while now, and they&#39;ve consistently delivered. Their audits for YouTube and social media are detailed and actionable, giving us clear insight into what&#39;s working and what&#39;s not.</blockquote>
       <figcaption class="qtile-attr"><img class="qtile-attr__avatar" src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.41.38-300x263.png" alt="Saskia Brooks" /><span class="qtile-attr__text"><strong>Saskia Brooks</strong><span>Bikini Island</span></span></figcaption>
     </figure>
 
@@ -501,10 +521,10 @@
 
     <!-- VIDEO 3 -->
     <article class="qtile qtile--video qtile--video-3 qtile--clickable" data-testimonial="2">
-      <video autoplay muted loop playsinline preload="metadata"><source src="assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" /></video>
+      <video autoplay muted loop playsinline preload="metadata"><source src="../assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" /></video>
       <span class="qtile__play" aria-hidden="true">▶</span>
       <div class="qtile__caption">
-        <span class="qtile__caption-eyebrow">Watch · 1:14</span>
+        <span class="qtile__caption-eyebrow">Watch &middot; 1:14</span>
         <p class="qtile__caption-attr"><img class="qtile-attr__avatar" src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.38.50-300x261.png" alt="Thomas" /><strong>Thomas</strong></p>
       </div>
     </article>
@@ -527,49 +547,53 @@
 <section class="insights">
   <div class="wrap">
     <div class="insights__head reveal">
-      <h2>The questions <em>other agencies dodge.</em></h2>
+      <div>
+        <h2>The questions <em>other agencies dodge.</em></h2>
+        <p class="insights__sub">Pre-call homework, done for you.</p>
+      </div>
       <a href="learning-hub.html" class="btn btn--ghost">Explore the Learning Hub <span class="arrow">&rarr;</span></a>
     </div>
     <div class="insights__grid">
-      <a href="https://fuelledagency.com/learning-hub/social-media-management-for-yachting-brands/" class="ic reveal" style="--reveal-delay: 0ms;">
+      <a href="learning-hub.html" class="ic reveal" style="--reveal-delay: 0ms;">
         <div class="ic__media"><img src="https://fuelledagency.com/wp-content/uploads/2026/03/DJI_20260115103355_0560_D-scaled.jpg" alt="" /></div>
-        <span class="ic__tag">Industry</span>
-        <h3 class="ic__title">Social Media Management for Yachting Brands</h3>
-        <span class="ic__meta"><span>3 March 2026</span> &middot; <span>4 mins</span></span>
+        <span class="ic__tag">Cost &amp; pricing</span>
+        <h3 class="ic__title">How much should a £5m brand spend on content in 2026?</h3>
+        <span class="ic__meta"><span>Cost &amp; pricing</span> &middot; <span>9 mins</span></span>
       </a>
-      <a href="https://fuelledagency.com/learning-hub/documentary-style-marketing/" class="ic reveal" style="--reveal-delay: 100ms;">
+      <a href="learning-hub.html" class="ic reveal" style="--reveal-delay: 100ms;">
         <div class="ic__media"><img src="https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg" alt="" /></div>
-        <span class="ic__tag">Content marketing</span>
-        <h3 class="ic__title">The Rise of Documentary-Style Content Marketing: Why Authenticity Wins</h3>
-        <span class="ic__meta"><span>3 March 2026</span> &middot; <span>5 mins</span></span>
+        <span class="ic__tag">Comparisons</span>
+        <h3 class="ic__title">In-house vs. agency: the real cost breakdown for 2026.</h3>
+        <span class="ic__meta"><span>Comparisons</span> &middot; <span>11 mins</span></span>
       </a>
-      <a href="https://fuelledagency.com/learning-hub/creative-social-media-strategies-search-everywhere-optimization/" class="ic reveal" style="--reveal-delay: 200ms;">
+      <a href="learning-hub.html" class="ic reveal" style="--reveal-delay: 200ms;">
         <div class="ic__media"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/Copy-of-DSC08096.jpg" alt="" /></div>
-        <span class="ic__tag">Industry insights</span>
-        <h3 class="ic__title">Creative Social Media Strategies &amp; Search Everywhere Optimization</h3>
-        <span class="ic__meta"><span>14 December 2025</span> &middot; <span>6 mins</span></span>
+        <span class="ic__tag">Reviews</span>
+        <h3 class="ic__title">Why the deliverables-retainer model is broken.</h3>
+        <span class="ic__meta"><span>Reviews</span> &middot; <span>7 mins</span></span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ============== END CTA — monumental "Ready to start a project?" ============== -->
+<!-- ============== END CTA - the trilemma close ============== -->
 <section class="end-cta">
   <div class="wrap">
     <div class="end-cta__inner reveal">
       <div>
-        <p class="eyebrow" style="margin-bottom: var(--sp-7);">Ready when you are</p>
+        <p class="eyebrow" style="margin-bottom: var(--sp-7);">The fourth option</p>
         <h2 class="end-cta__heading">
-          Tell us what your business <em>actually does.</em>
+          You can't hire it. You can't outsource it. <em>You can't DIY it.</em>
+          <span class="end-cta__plug">So plug us in.</span>
         </h2>
       </div>
       <div class="end-cta__body">
         <p class="end-cta__sub">
-          Thirty minutes on the phone. <em>We&#39;ll tell you straight whether content will move the needle for you</em>, before you&#39;ve spent a penny. No proposal-by-stealth. No hard sell. If it isn&#39;t the right fit, we&#39;ll say so.
+          Thirty minutes on a call. <em>We tell you straight whether content will move the needle for your business</em>, before you&#39;ve spent a penny. Or take the deck to your CMO first. Either works.
         </p>
         <div class="end-cta__ctas">
-          <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
-          <a href="learning-hub.html" class="btn btn--ghost">Read the Learning Hub</a>
+          <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
+          <a href="#deck" class="btn btn--ghost">Download the deck</a>
         </div>
       </div>
     </div>
@@ -581,8 +605,8 @@
   <div class="wrap">
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <a href="index.html" aria-label="Fuelled Agency"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" /></a>
-        <p>Full-stack social production for owner-led businesses. Crew on site, founder on camera, strategy through edit through post as one package. From £475 a month.</p>
+        <a href="index.html" aria-label="Fuelled Agency"><img src="../assets/Fuelled-white.png" alt="Fuelled Agency" /></a>
+        <p>A media company for marketing teams. Strategy, production, paid, and measurement, run as your in-house team would. For brands turning over £5m and up. From £2,475 a month.</p>
         <div class="site-footer__brand-social">
           <a href="https://www.instagram.com/fuelledagency" aria-label="Instagram">IG</a>
           <a href="https://www.facebook.com/Fuelledagency/" aria-label="Facebook">FB</a>
@@ -594,6 +618,7 @@
         <h5>Site</h5>
         <ul>
           <li><a href="what-we-do.html">What we do</a></li>
+          <li><a href="service-options.html">Pricing</a></li>
           <li><a href="our-work.html">Our work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="learning-hub.html">Learning Hub</a></li>
@@ -602,23 +627,24 @@
       <div>
         <h5>Get in touch</h5>
         <ul>
-          <li><a href="book-a-call.html">Book a call</a></li>
+          <li><a href="book-a-call.html">Let's chat</a></li>
+          <li><a href="#deck">Download the deck</a></li>
           <li><a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a></li>
         </ul>
       </div>
       <div>
         <h5>Where we work</h5>
         <ul>
-          <li>UK · all regions</li>
-          <li>Europe · Mallorca, Mediterranean</li>
+          <li>UK &middot; all regions</li>
+          <li>Europe &middot; Mallorca, Mediterranean</li>
           <li>Remote planning, on-site shoots</li>
         </ul>
       </div>
     </div>
 
     <div class="site-footer__bottom">
-      <span>© Fuelled Media Ltd. Registered in England and Wales · Company no. 17070139</span>
-      <span><a href="/privacy-policy/">Privacy policy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a></span>
+      <span>© Fuelled Media Ltd. Registered in England and Wales &middot; Company no. 17070139</span>
+      <span><a href="/privacy-policy/">Privacy policy</a> &nbsp;&middot;&nbsp; <a href="/terms">Terms</a></span>
     </div>
 
     <p class="site-footer__wordmark" aria-hidden="true">Fuelled.</p>
@@ -629,7 +655,7 @@
 <button class="pip" id="pip" aria-label="Open testimonial">
   <span class="pip__media">
     <video id="pip-video" autoplay muted loop playsinline preload="metadata">
-      <source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
+      <source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
     </video>
     <svg viewBox="0 0 60 60" aria-hidden="true">
       <circle class="pip__ring-bg" cx="30" cy="30" r="29" />
@@ -670,7 +696,7 @@
 </div>
 
 <script>
-  // ====== CUSTOM CURSOR — dot snaps to cursor, orb lerps behind ======
+  // ====== CUSTOM CURSOR - dot snaps to cursor, orb lerps behind ======
   (function () {
     const fine = window.matchMedia('(pointer: fine)').matches;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -685,7 +711,6 @@
     let raf = 0;
 
     const loop = () => {
-      // Smooth lerp for the glow orb (lag behind the dot)
       gx += (mx - gx) * 0.18;
       gy += (my - gy) * 0.18;
       dot.style.setProperty('--mx', `${mx}px`);
@@ -700,7 +725,6 @@
       mx = e.clientX; my = e.clientY;
     }, { passive: true });
 
-    // Hide when cursor leaves window
     document.addEventListener('mouseleave', () => {
       dot.classList.add('is-out'); orb.classList.add('is-out');
     });
@@ -708,8 +732,7 @@
       dot.classList.remove('is-out'); orb.classList.remove('is-out');
     });
 
-    // Expand on interactive elements
-    const interactiveSel = 'a, button, .btn, [role="button"], input, textarea, select, .work-row, .bento-card, .ic, .service-card, .t-card, .q-card, .services__module';
+    const interactiveSel = 'a, button, .btn, [role="button"], input, textarea, select, .work-row, .bento-card, .ic, .service-card, .t-card, .q-card, .services__module, .fivesteps__witness, .qtile--claim';
     document.addEventListener('mouseover', (e) => {
       if (e.target.closest(interactiveSel)) {
         dot.classList.add('is-active');
@@ -725,7 +748,6 @@
   })();
 
   // ====== CURSOR PARALLAX (hero) ======
-  // Maps cursor position to CSS variables --cx / --cy on body, range -1..1
   (function () {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) return;
@@ -742,12 +764,12 @@
     }, { passive: true });
   })();
 
-  // ====== HERO IMAGE TRAIL — images pop in/out tracked to cursor ======
+  // ====== HERO IMAGE TRAIL - images pop in/out tracked to cursor ======
   (function () {
     const hero = document.querySelector('.hero');
     const trail = document.getElementById('hero-trail');
     if (!hero || !trail) return;
-    if (matchMedia('(pointer: coarse)').matches) return; // touch: skip
+    if (matchMedia('(pointer: coarse)').matches) return;
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const pool = [
@@ -762,11 +784,10 @@
       'https://fuelledagency.com/wp-content/uploads/2026/03/Copy-of-L1006288-scaled.jpg',
       'https://fuelledagency.com/wp-content/uploads/2026/02/DSC08953.jpg'
     ];
-    // Preload so the first appearance is instant
     pool.forEach(src => { const i = new Image(); i.src = src; });
 
     let lastIdx = -1, lastX = 0, lastY = 0, primed = false;
-    const minDistance = 110; // pixels of movement before next image spawns
+    const minDistance = 110;
 
     hero.addEventListener('mousemove', (e) => {
       const rect = hero.getBoundingClientRect();
@@ -778,21 +799,16 @@
       if (Math.hypot(dx, dy) < minDistance) return;
       lastX = x; lastY = y;
 
-      // Pick a random image, never the same as last
       let idx = Math.floor(Math.random() * pool.length);
       if (idx === lastIdx) idx = (idx + 1) % pool.length;
       lastIdx = idx;
 
-      // Image dimensions match the CSS clamp(140px, 14vw, 220px) max width.
-      // Generous padding so tilt (±7°), pop scale (1.02), upward drift (24px)
-      // and the bento's rounded corners can't bite the image.
       const w = Math.min(220, Math.max(140, window.innerWidth * 0.14));
-      const aspectRatio = Math.random() > 0.55 ? 3 / 4 : 4 / 3; // w:h ratio
+      const aspectRatio = Math.random() > 0.55 ? 3 / 4 : 4 / 3;
       const h = w / aspectRatio;
-      // Account for ±7° rotation: bounding box grows by sin(7°)*max(w,h) ≈ 12% of long edge
       const tiltPad = Math.max(w, h) * 0.13;
       const padX = w / 2 + tiltPad + 24;
-      const padY_top    = h / 2 + tiltPad + 24 + 30; // +30 for upward drift on fade-out
+      const padY_top    = h / 2 + tiltPad + 24 + 30;
       const padY_bottom = h / 2 + tiltPad + 24;
       const cx = Math.max(padX,     Math.min(rect.width  - padX,        x));
       const cy = Math.max(padY_top, Math.min(rect.height - padY_bottom, y));
@@ -811,17 +827,12 @@
       setTimeout(() => img.remove(), 1300);
     }, { passive: true });
 
-    // Clear any lingering images when cursor leaves the hero
     hero.addEventListener('mouseleave', () => {
       trail.querySelectorAll('.hero__trail-img').forEach(el => el.classList.add('is-leaving'));
     });
   })();
 
-  // ====== HOW WE WORK — scroll-progress-driven press-play ======
-  // Section is 300vh tall, .manifesto__pin sticks for 200vh of scroll.
-  // Pills advance based on scroll position (no auto-cycle clock the user
-  // can't control). Progress bar fills as the user scrolls through that
-  // pill's third of the scroll range.
+  // ====== HOW WE WORK - scroll-progress-driven press-play ======
   (function () {
     const section = document.getElementById('manifesto');
     if (!section) return;
@@ -835,7 +846,6 @@
     const apply = (i, phaseProgress) => {
       pills.forEach((p, idx) => {
         p.classList.toggle('is-active', idx === i);
-        // progress bar: 0% on inactive, current % on active
         if (idx === i) {
           p.style.setProperty('--progress', (phaseProgress * 100).toFixed(1) + '%');
         } else if (idx < i) {
@@ -863,7 +873,6 @@
 
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(update); };
 
-    // Hover behaviour: locks the active pill while hovered (overrides scroll)
     pills.forEach((pill, i) => {
       pill.addEventListener('mouseenter', () => {
         paused = true; hoverIdx = i;
@@ -874,7 +883,6 @@
         update();
       });
       pill.addEventListener('click', () => {
-        // Click scrolls the page so this pill aligns at the start of its phase
         const range = section.offsetHeight - window.innerHeight;
         const target = section.offsetTop + (i / N) * range + 1;
         window.scrollTo({ top: target, behavior: 'smooth' });
@@ -906,8 +914,6 @@
   })();
 
   // ====== MAGNETIC CTAs ======
-  // Sets --mx/--my CSS vars so the magnetic translate composes with the
-  // hover-lift (--lift) the CSS controls. No fighting transforms.
   (function () {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) return;
@@ -933,24 +939,23 @@
 
   // ====== PIP TESTIMONIAL WIDGET + SHARED MODAL ======
   (function () {
-    // Testimonial data — 3 video stories (placeholder videos)
     const stories = [
       {
-        video: 'assets/0_Woman_Bathrobe_1920x1080.mp4',
+        video: '../assets/0_Woman_Bathrobe_1920x1080.mp4',
         avatar: 'https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.42.16-300x260.png',
         name: 'Jerry',
         business: 'Mox Spot, North Wales',
         quote: "They didn't just turn up with cameras. They helped me build a proper strategy for how to market the days, attract the right drivers and create excitement before we even opened bookings."
       },
       {
-        video: 'assets/6757713_Boat_Yacht_1920x1080.mp4',
+        video: '../assets/6757713_Boat_Yacht_1920x1080.mp4',
         avatar: 'https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.39.30-300x261.png',
         name: 'Rory Dixon',
         business: '',
         quote: 'Working with Steve and the team at Fuelled has been nothing short of exceptional. The entire experience was seamless, enjoyable, and the results exceeded expectations. Truly a five-star team.'
       },
       {
-        video: 'assets/0_Woman_Luxury_1920x1080.mp4',
+        video: '../assets/0_Woman_Luxury_1920x1080.mp4',
         avatar: 'https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.38.50-300x261.png',
         name: 'Thomas',
         business: '',
@@ -991,7 +996,6 @@
       activeIdx = i;
       const s = stories[i];
       pipName.textContent = s.name;
-      // swap video source
       const src = pipVideo.querySelector('source');
       if (src && src.getAttribute('src') !== s.video) {
         src.setAttribute('src', s.video);
@@ -1013,7 +1017,6 @@
       cycleRaf = requestAnimationFrame(tickCycle);
     };
 
-    // Show PiP after user has scrolled past 70% of viewport
     const onScroll = () => {
       if (dismissed) return;
       const threshold = window.innerHeight * 0.7;
@@ -1021,7 +1024,6 @@
     };
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    // Set modal content for a given story index (no open/close, just swap)
     const setModalStory = (i) => {
       modalIdx = ((i % stories.length) + stories.length) % stories.length;
       const s = stories[modalIdx];
@@ -1033,16 +1035,13 @@
       modalVideo.innerHTML = '<source src="' + s.video + '" type="video/mp4" />';
       modalVideo.load();
       modalVideo.play().catch(() => {});
-      // Counter
       modalCounterCurrent.textContent = pad2(modalIdx + 1);
       modalCounterTotal.textContent = pad2(stories.length);
-      // Hide nav if there's only one story
       const single = stories.length <= 1;
       modalPrev.classList.toggle('is-hidden', single);
       modalNext.classList.toggle('is-hidden', single);
     };
 
-    // Open modal at story index
     const openModal = (i) => {
       setModalStory(i);
       modal.hidden = false;
@@ -1051,7 +1050,6 @@
         document.body.classList.add('modal-open');
       });
     };
-    // Expose for the mobile-menu testimonial click
     window.__fuelledOpenStory = openModal;
 
     const closeModal = () => {
@@ -1061,11 +1059,9 @@
       setTimeout(() => { modal.hidden = true; }, 280);
     };
 
-    // Prev / Next navigation within the modal
     modalPrev.addEventListener('click', (e) => { e.stopPropagation(); setModalStory(modalIdx - 1); });
     modalNext.addEventListener('click', (e) => { e.stopPropagation(); setModalStory(modalIdx + 1); });
 
-    // PiP click → open modal with active story
     pip.addEventListener('click', (e) => {
       if (e.target === pipClose || pipClose.contains(e.target)) return;
       openModal(activeIdx);
@@ -1076,7 +1072,6 @@
       pip.classList.add('is-dismissed');
     });
 
-    // Bento video tiles → open modal with their assigned story
     document.querySelectorAll('.qtile--clickable').forEach(tile => {
       tile.addEventListener('click', () => {
         const idx = parseInt(tile.dataset.testimonial, 10);
@@ -1084,7 +1079,12 @@
       });
     });
 
-    // Modal close: button, backdrop click, ESC. Arrow keys = prev/next.
+    // Five-Steps witness video also opens the modal (defaults to Jerry/story 0)
+    const witness = document.querySelector('.fivesteps__witness');
+    if (witness) {
+      witness.addEventListener('click', () => openModal(0));
+    }
+
     modalClose.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
     document.addEventListener('keydown', (e) => {
@@ -1128,32 +1128,26 @@
     });
     if (closeBtn) closeBtn.addEventListener('click', closeMenu);
 
-    // Tap any nav link → close (so the next page navigation isn't blocked)
     menu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        // small delay so click can register before menu animates out
         setTimeout(closeMenu, 50);
       });
     });
 
-    // Tap the embedded testimonial → close menu, then open the shared modal
     if (mmTest) {
       mmTest.addEventListener('click', () => {
         closeMenu();
         setTimeout(() => {
-          // Opens story 0 (Jerry) — matches the in-menu video preview
           const opener = window.__fuelledOpenStory;
           if (typeof opener === 'function') opener(0);
         }, 320);
       });
     }
 
-    // Esc closes
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && menu.classList.contains('is-open')) closeMenu();
     });
 
-    // Auto-close if window resizes past mobile breakpoint
     const mq = window.matchMedia('(min-width: 881px)');
     mq.addEventListener('change', (e) => { if (e.matches) closeMenu(); });
   })();

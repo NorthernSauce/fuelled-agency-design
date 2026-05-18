@@ -1,4 +1,4 @@
-# Fuelled Agency — Homepage v2 Design Brief
+# Fuelled Agency - Homepage v2 Design Brief
 
 Written: 2026-04-29
 Source files: `design/v2/index.html`, `design/v2/styles.css`
@@ -61,7 +61,7 @@ That gap is the entire positioning.
 
 ### 2.4 Layout pattern: floating bento sections
 
-The page background is `--c-dark-deeper`. Every major section sits on top of it as a rounded panel with `margin: clamp(10px, 1vw, 16px)`. Sections alternate between cream/paper/dark fills. This is the visual signature of the page — nothing is edge-to-edge except the dark backdrop.
+The page background is `--c-dark-deeper`. Every major section sits on top of it as a rounded panel with `margin: clamp(10px, 1vw, 16px)`. Sections alternate between cream/paper/dark fills. This is the visual signature of the page - nothing is edge-to-edge except the dark backdrop.
 
 ---
 
@@ -69,17 +69,17 @@ The page background is `--c-dark-deeper`. Every major section sits on top of it 
 
 Order top to bottom:
 
-1. **Nav** — transparent over hero, sticky, lime CTA pill
-2. **Hero** — full-bleed blurred reel background, centered Playfair headline, italic emphasis, two CTAs
-3. **Trusted by** — flush horizontal logo ticker, auto-scrolling
-4. **Position** — Playfair H2 with two inline thumbnails baked into the headline ("Built [img] for owners who'd rather be on camera [img] than chase the algorithm"), sidebar paragraph + dual CTA
-5. **Featured Work** — image-led bento grid (lead + portrait + wide + standard), captioned on hover, all link to case studies
-6. **Our Service / What Changes** — 3 outcome cards (inbox, Sundays, grid). Each card is illustration + headline + sub. NOT a feature list.
-7. **Manifesto / How we work** — full-width press-play section. Sticky pin, ambient looping video frames behind, three numbered pills (Owner-led / Full production / One price). Active pill swaps the background video.
-8. **Testimonials** — bento wall mixing video tiles + quote tiles + stat tiles. Floating PiP widget allows continued playback while scrolling. Modal opens for full video stories.
-9. **Insights / Learning Hub** — H2 "The questions other agencies dodge", 3 article cards
-10. **End CTA** — monumental "Tell us what your business actually does." Two CTAs.
-11. **Footer** — minimal, 4 columns, brand line top
+1. **Nav** - transparent over hero, sticky, lime CTA pill
+2. **Hero** - full-bleed blurred reel background, centered Playfair headline, italic emphasis, two CTAs
+3. **Trusted by** - flush horizontal logo ticker, auto-scrolling
+4. **Position** - Playfair H2 with two inline thumbnails baked into the headline ("Built [img] for owners who'd rather be on camera [img] than chase the algorithm"), sidebar paragraph + dual CTA
+5. **Featured Work** - image-led bento grid (lead + portrait + wide + standard), captioned on hover, all link to case studies
+6. **Our Service / What Changes** - 3 outcome cards (inbox, Sundays, grid). Each card is illustration + headline + sub. NOT a feature list.
+7. **Manifesto / How we work** - full-width press-play section. Sticky pin, ambient looping video frames behind, three numbered pills (Owner-led / Full production / One price). Active pill swaps the background video.
+8. **Testimonials** - bento wall mixing video tiles + quote tiles + stat tiles. Floating PiP widget allows continued playback while scrolling. Modal opens for full video stories.
+9. **Insights / Learning Hub** - H2 "The questions other agencies dodge", 3 article cards
+10. **End CTA** - monumental "Tell us what your business actually does." Two CTAs.
+11. **Footer** - minimal, 4 columns, brand line top
 
 ---
 
@@ -102,7 +102,7 @@ Order top to bottom:
 
 ### 4.4 Manifesto press-play
 - Section is taller than viewport. `.manifesto__pin` is `position: sticky; top: 0; height: 100vh`.
-- Section uses `overflow: clip` (NOT `hidden` — `hidden` breaks sticky).
+- Section uses `overflow: clip` (NOT `hidden` - `hidden` breaks sticky).
 - JS scroll-progress switches active pill and crossfades the background video at thresholds.
 - Heading and pills unpin together when the last pill lands (no bleed under heading).
 
@@ -115,7 +115,7 @@ Order top to bottom:
 
 ### 4.6 Mobile menu
 - Full-screen overlay, lime stagger reveal on links, embedded video testimonial preview, CTA pill.
-- Burger icon visibility: must use `display: inline-grid` directly (not unset) — earlier `display: none` in a later @layer was clobbering it. Desktop hide via `@media (min-width: 881px) { display: none !important }`.
+- Burger icon visibility: must use `display: inline-grid` directly (not unset) - earlier `display: none` in a later @layer was clobbering it. Desktop hide via `@media (min-width: 881px) { display: none !important }`.
 
 ---
 
@@ -181,8 +181,8 @@ Owner-to-owner. Plain English. Short sentences. Specific numbers. No agency jarg
 - Placeholder testimonial videos
 
 ### 6.2 Outstanding
-- **Real client video testimonials** — currently using stock/placeholder
-- **Verbatim testimonial quotes** — current copy is paraphrased, flagged in `strategy.md §10`
+- **Real client video testimonials** - currently using stock/placeholder
+- **Verbatim testimonial quotes** - current copy is paraphrased, flagged in `strategy.md §10`
 - **Confirm avatar mappings** for Jerry and Thomas
 - **Real Learning Hub article thumbnails and titles** (currently pulling from live site)
 
@@ -205,8 +205,8 @@ Owner-to-owner. Plain English. Short sentences. Specific numbers. No agency jarg
 ## 8. Known constraints / gotchas
 
 - **`overflow: clip` not `hidden`** on any section that needs sticky inside it.
-- **Layered CSS source order matters** — later `display: none` in `@layer components` will clobber earlier mobile-media `display: inline-grid` unless the mobile rule has `!important` on a desktop-only `min-width` query.
-- **Tailwind v4 silently drops pure-CSS files with no `@apply`** — keep form/component CSS inside the same compiled stylesheet, not standalone.
+- **Layered CSS source order matters** - later `display: none` in `@layer components` will clobber earlier mobile-media `display: inline-grid` unless the mobile rule has `!important` on a desktop-only `min-width` query.
+- **Tailwind v4 silently drops pure-CSS files with no `@apply`** - keep form/component CSS inside the same compiled stylesheet, not standalone.
 - **Buttons use `:where()` in nav** to drop nav-link colour specificity to 0, otherwise `.nav a { color: white }` stomps `.btn` lime fill.
 - **Modal grid children need `min-height: 0`** to allow `overflow-y: auto` to actually scroll.
 

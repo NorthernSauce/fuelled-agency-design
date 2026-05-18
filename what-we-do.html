@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>What we do. One package. The whole thing, done. — Fuelled Agency</title>
-  <meta name="description" content="Strategy, shoot, edit, post. One package, one number, one team. From £475 a month. Built for owner-led businesses who want a real social partner, not a freelancer or an agency-of-record." />
+  <title>What we do. Every other agency sells you volume. - Fuelled Agency</title>
+  <meta name="description" content="A content team you brief once. Strategy, production, paid, and measurement, run as your internal team would, by people who've actually run businesses. From £2,475 a month." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,60 +19,65 @@
 <div class="cursor-dot" aria-hidden="true"></div>
 
 <!-- ============================================================
-     MOBILE MENU — identical to homepage
+     MOBILE MENU - identical to homepage
      ============================================================ -->
 <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <div class="mobile-menu__bg" aria-hidden="true">
     <video autoplay muted loop playsinline preload="metadata">
-      <source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
+      <source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="mobile-menu__overlay" aria-hidden="true"></div>
 
   <div class="mobile-menu__inner">
     <div class="mobile-menu__top">
-      <a href="index.html" aria-label="Fuelled Agency home"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" /></a>
+      <a href="index.html" aria-label="Fuelled Agency home"><img src="../assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" /></a>
       <button class="nav-toggle is-active" id="mobile-menu-close" aria-label="Close menu">
         <span></span><span></span><span></span>
       </button>
     </div>
 
     <nav class="mobile-menu__nav" aria-label="Mobile primary">
-      <a href="what-we-do.html" class="mobile-menu__link is-current">
+      <a href="what-we-do.html" class="mobile-menu__link" aria-current="page">
         <span class="mobile-menu__link-num">01</span>
         <span class="mobile-menu__link-text">What we do</span>
         <span class="arrow">&rarr;</span>
       </a>
-      <a href="our-work.html" class="mobile-menu__link">
+      <a href="service-options.html" class="mobile-menu__link">
         <span class="mobile-menu__link-num">02</span>
+        <span class="mobile-menu__link-text">Pricing</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="our-work.html" class="mobile-menu__link">
+        <span class="mobile-menu__link-num">03</span>
         <span class="mobile-menu__link-text">Our work</span>
         <span class="arrow">&rarr;</span>
       </a>
       <a href="about.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">03</span>
+        <span class="mobile-menu__link-num">04</span>
         <span class="mobile-menu__link-text">About</span>
         <span class="arrow">&rarr;</span>
       </a>
       <a href="learning-hub.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">04</span>
+        <span class="mobile-menu__link-num">05</span>
         <span class="mobile-menu__link-text">Learning Hub</span>
         <span class="arrow">&rarr;</span>
       </a>
     </nav>
 
     <div class="mobile-menu__cta">
-      <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+      <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
     </div>
 
     <button class="mm-testimonial" id="mm-testimonial" aria-label="Watch a client story">
       <span class="mm-testimonial__media">
         <video autoplay muted loop playsinline preload="metadata">
-          <source src="assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
+          <source src="../assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
         </video>
       </span>
       <span class="mm-testimonial__content">
         <span class="mm-testimonial__eyebrow">Watch a story</span>
-        <span class="mm-testimonial__quote">"They didn't just turn up with cameras. They helped me build a proper strategy."</span>
+        <span class="mm-testimonial__quote">"They didn&#39;t just turn up with cameras. They helped me build a proper strategy."</span>
         <span class="mm-testimonial__attr">Jerry &middot; Mox Spot</span>
       </span>
     </button>
@@ -89,19 +94,24 @@
   </div>
 </aside>
 
-<!-- ============== SVC HERO — split: copy left, vertical reel right ============== -->
-<section class="svc-hero">
-  <header class="site-header site-header--solid">
+<!-- ============== HERO - full-bleed video bg, inherits home pattern ============== -->
+<section class="hero">
+  <div class="hero__media" aria-hidden="true">
+    <img src="https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg" alt="" />
+  </div>
+
+  <header class="site-header">
     <div class="wrap site-header__inner">
       <a href="index.html" class="brand" aria-label="Fuelled Agency home">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" />
+        <img src="../assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" />
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="what-we-do.html" class="nav-link is-current">What we do</a>
+        <a href="what-we-do.html" class="nav-link" aria-current="page">What we do</a>
+        <a href="service-options.html" class="nav-link">Pricing</a>
         <a href="our-work.html" class="nav-link">Our work</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="learning-hub.html" class="nav-link">Learning Hub</a>
-        <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+        <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
@@ -109,436 +119,381 @@
     </div>
   </header>
 
-  <div class="svc-hero__bg" aria-hidden="true">
-    <video autoplay muted loop playsinline preload="metadata">
-      <source src="assets/6757713_Boat_Yacht_1920x1080.mp4" type="video/mp4" />
-    </video>
-    <div class="svc-hero__bg-grade"></div>
-  </div>
+  <div class="wrap hero__inner">
+    <span class="hero__badge">What you actually get</span>
 
-  <span class="svc-hero__rotate" aria-hidden="true">Fuelled / What we do — 2026</span>
-
-  <div class="wrap svc-hero__inner">
-    <span class="eyebrow svc-hero__eyebrow reveal">What we do</span>
-
-    <h1 class="svc-hero__headline reveal">
-      One team.
-      <em>One package.</em>
-      <span>The whole thing,</span>
-      <em>done.</em>
+    <h1 class="hero__headline">
+      Every other agency
+      <em>sells you volume.</em>
+      <span class="lime">Volume is what got you here.</span>
     </h1>
 
-    <p class="svc-hero__sub reveal">
-      Strategy. Shoot. Edit. Post. We turn up with a crew, get you on camera, and run your social like it's our own. <em>One number a month, all in.</em>
+    <p class="hero__sub">
+      Fuelled is a content team you brief once. <em>Strategy, production, paid, and measurement</em>, run as your internal team would, by people who've actually run businesses.
     </p>
 
-    <div class="svc-hero__ctas reveal">
-      <a href="book-a-call.html" class="btn">Book a call <span class="arrow">&rarr;</span></a>
-      <a href="#process" class="btn btn--ghost">See how it runs</a>
+    <div class="hero__ctas">
+      <a href="#deck" class="btn">Download the deck <span class="arrow">&rarr;</span></a>
+      <a href="service-options.html" class="btn btn--ghost">See pricing</a>
     </div>
-  </div>
-
-</section>
-
-<!-- ============== SVC SPEC — monumental layered statement ============== -->
-<section class="svc-spec">
-  <div class="wrap">
-    <div class="svc-spec__grid reveal">
-      <div class="svc-spec__col svc-spec__col--01">
-        <span class="svc-spec__num">01</span>
-        <h3>Strategy.</h3>
-        <p>Mapped before the camera comes out.</p>
-      </div>
-      <div class="svc-spec__col svc-spec__col--02">
-        <span class="svc-spec__num">02</span>
-        <h3>Shoot.</h3>
-        <p>One day. Crew on site. You on camera.</p>
-      </div>
-      <div class="svc-spec__col svc-spec__col--03">
-        <span class="svc-spec__num">03</span>
-        <h3>Edit.</h3>
-        <p>A month of content from one shoot day.</p>
-      </div>
-      <div class="svc-spec__col svc-spec__col--04">
-        <span class="svc-spec__num">04</span>
-        <h3>Post.</h3>
-        <p>Scheduled, captioned, signed off by you.</p>
-      </div>
-    </div>
-    <p class="svc-spec__statement reveal">
-      <em>One team.</em> One package. <em>One number a month.</em>
-    </p>
   </div>
 </section>
 
-<!-- ============== SVC FIT — who it's for / who it isn't ============== -->
-<section class="svc-fit">
+<!-- ============== OLD WAY - three-card category takedown ============== -->
+<section class="oldway">
   <div class="wrap">
-    <div class="svc-fit__head reveal">
-      <p class="eyebrow">The fit test</p>
-      <h2>Who we're built for. <em>And who we're not.</em></h2>
-      <p class="svc-fit__sub">We turn down more enquiries than we take. If we're not the right fit, we'll say so on the call. Reads like a wall of text? Think of it as the part of the conversation that usually happens too late.</p>
-    </div>
+    <header class="oldway__head reveal">
+      <p class="eyebrow">Why your last three engagements didn't land</p>
+      <h2 class="oldway__title">Three models. <em>None of them work</em> for marketing teams at £5m+ brands.</h2>
+    </header>
 
-    <div class="svc-fit__grid">
-      <article class="svc-fit__card svc-fit__card--yes reveal">
-        <header class="svc-fit__card-head">
-          <span class="svc-fit__tag svc-fit__tag--yes">Built for you if</span>
-        </header>
-        <ul>
-          <li><span class="svc-fit__icon" aria-hidden="true">✓</span> You run the business. Decisions go through you, not a brand committee.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">✓</span> You're willing to be on camera. Not constantly. Once a month, for the shoot day.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">✓</span> There's a real business behind the doors. Real customers, real product, real sites.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">✓</span> You want one number a month. Not a price list, not a media plan, not "from".</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">✓</span> You've been burnt by an agency before and you're done with it.</li>
-        </ul>
+    <div class="oldway__grid">
+      <article class="oldway__card reveal">
+        <span class="oldway__card-num">01</span>
+        <span class="oldway__card-kicker">Volume-retainer agencies</span>
+        <h3 class="oldway__card-title">Sold by the post. <em>Priced by the brand spend</em> they can't influence.</h3>
+        <p>The deliverables-retainer model rewards volume over value. Content gets pushed to junior staff juggling six other clients. The senior account director who pitched you doesn't run your account, and the work shows it.</p>
       </article>
 
-      <article class="svc-fit__card svc-fit__card--no reveal" style="--reveal-delay: 80ms;">
-        <header class="svc-fit__card-head">
-          <span class="svc-fit__tag svc-fit__tag--no">Probably not for you if</span>
-        </header>
-        <ul>
-          <li><span class="svc-fit__icon" aria-hidden="true">×</span> The brand is run by a board, not a person.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">×</span> You want to stay completely off camera.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">×</span> What you actually want is paid ads management.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">×</span> Your monthly budget is under £400. We'll point you somewhere honest.</li>
-          <li><span class="svc-fit__icon" aria-hidden="true">×</span> You want a freelancer who'll do whatever you ask without pushing back.</li>
-        </ul>
+      <article class="oldway__card reveal" style="--reveal-delay: 80ms;">
+        <span class="oldway__card-num">02</span>
+        <span class="oldway__card-kicker">In-house hires</span>
+        <h3 class="oldway__card-title">Six months to ramp. <em>Twelve months</em> until they leave.</h3>
+        <p>Two juniors cost £52k base. Plus NI, pension, kit, training, sick days, day-one rights. A four-person in-house team is £190k to £250k loaded. They can post and caption. They can't direct a shoot or run a multi-market strategy.</p>
+      </article>
+
+      <article class="oldway__card reveal" style="--reveal-delay: 160ms;">
+        <span class="oldway__card-num">03</span>
+        <span class="oldway__card-kicker">Freelancer roster</span>
+        <h3 class="oldway__card-title">Brilliant briefs. <em>Until one of them</em> goes on holiday.</h3>
+        <p>Cheap freelancers caption and schedule. Some are brilliant; most ghost when something better comes along. None of them carries the strategy across the team. The brief drift is what kills the through-line.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============== STATS STRIP — real numbers from published case studies ============== -->
-<section class="stats-strip">
-  <div class="wrap">
-    <div class="stats-strip__head reveal">
-      <div>
-        <p class="eyebrow">The proof, in numbers</p>
-        <h2>What one shoot day <em>actually moves.</em></h2>
-      </div>
-      <p class="stats-strip__head__lede">Every number below is from a published case study. <em>Zero paid spend behind any of them.</em> The full breakdowns live in the Learning Hub.</p>
-    </div>
+<!-- ============== TACTICAL DRIFT - named Problem Mechanism, dark anchor ============== -->
+<section class="tactical">
+  <div class="tactical__bg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata">
+      <source src="../assets/6757713_Boat_Yacht_1920x1080.mp4" type="video/mp4" />
+    </video>
+    <div class="tactical__bg-grade"></div>
+  </div>
 
-    <div class="stats-strip__grid reveal">
-      <a href="https://fuelledagency.com/learning-hub/content-creation-and-search-led-social-strategy-on-tiktok/" class="stat-tile">
-        <span class="stat-tile__eyebrow">TikTok · Aviation</span>
-        <span class="stat-tile__num">68.7<span class="stat-tile__num-suffix">K</span></span>
-        <span class="stat-tile__label">Post views in the first 30 days, fully organic.</span>
-        <span class="stat-tile__attr">The Helicopter Centre</span>
-      </a>
-
-      <a href="https://fuelledagency.com/learning-hub/human-led-visibility-driving-qualified-demand/" class="stat-tile">
-        <span class="stat-tile__eyebrow">Hospitality · Spain</span>
-        <span class="stat-tile__num">128<span class="stat-tile__num-suffix">%</span></span>
-        <span class="stat-tile__label">Lift in clicks once human-led content went live.</span>
-        <span class="stat-tile__attr">Expat relocation client</span>
-      </a>
-
-      <a href="https://fuelledagency.com/learning-hub/building-brand-authority-through-documentary-style-content/" class="stat-tile">
-        <span class="stat-tile__eyebrow">Yachting · Mediterranean</span>
-        <span class="stat-tile__num">18.7<span class="stat-tile__num-suffix">K</span></span>
-        <span class="stat-tile__label">Organic views from one documentary edit. 88 new followers in 10 days.</span>
-        <span class="stat-tile__attr">Yachting brand case study</span>
-      </a>
-
-      <a href="learning-hub.html" class="stat-tile">
-        <span class="stat-tile__eyebrow">Across every case</span>
-        <span class="stat-tile__num">£0</span>
-        <span class="stat-tile__label">Spent on paid promotion. The reach above is what good content does on its own.</span>
-        <span class="stat-tile__attr">All published cases</span>
-      </a>
-    </div>
+  <div class="wrap tactical__inner reveal">
+    <p class="eyebrow tactical__eyebrow">The thing that broke your last three engagements</p>
+    <h2 class="tactical__title">
+      Tactical Drift is what scatters strategy across <em>freelancers, tools,</em> and content calendars.
+    </h2>
+    <p class="tactical__body">
+      Six tools running ideation. Three freelancers writing captions in three different voices. A content calendar nobody owns. <em>AI sludge that no human signed off.</em> The strategy you wrote in February got remixed by twelve hands by August, and now nobody can tell what you stood for.
+    </p>
+    <p class="tactical__sub">Volume content trains the algorithm that nobody cares.</p>
   </div>
 </section>
 
-<!-- ============== SVC PROCESS — 5-step sticky rail ============== -->
-<section class="svc-process" id="process">
+<!-- ============== FIVE-STEP PLUG-IN - reused from homepage ============== -->
+<section class="fivesteps">
   <div class="wrap">
-    <div class="svc-process__head reveal">
-      <p class="eyebrow">How a month runs</p>
-      <h2>Five steps. <em>One team. No handoffs.</em></h2>
+    <div class="fivesteps__head reveal">
+      <p class="eyebrow">The Five-Step Plug-In</p>
+      <h2 class="fivesteps__title">One team. One brief. One bill. <em>Five steps that run as your team would.</em></h2>
+      <p class="fivesteps__sub">Strategy &middot; Shoot &middot; Edit &middot; Post &middot; Improve</p>
+      <p class="fivesteps__lede">
+        The Five-Step Plug-In is how we run Fuelled. It's how we kill Tactical Drift. <em>Centrally directed, roster-delivered, briefed once.</em>
+      </p>
     </div>
 
-    <div class="svc-process__rail">
-      <aside class="svc-process__sticky">
-        <div class="svc-process__media" data-step="0">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Copy-of-DSC08096.jpg" alt="" />
-        </div>
-        <div class="svc-process__media" data-step="1">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg" alt="" />
-        </div>
-        <div class="svc-process__media" data-step="2">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DJI_20260115103355_0560_D-scaled.jpg" alt="" />
-        </div>
-        <div class="svc-process__media" data-step="3">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg" alt="" />
-        </div>
-        <div class="svc-process__media" data-step="4">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Girls.jpg" alt="" />
-        </div>
-      </aside>
-
-      <ol class="svc-process__steps">
-        <li class="svc-process__step reveal" data-step="0">
-          <span class="svc-process__num">01</span>
-          <h3>Strategy.</h3>
-          <p>Before any camera comes out, we sit down. We map the audience, the angles, and the sectors you actually want messaging you. The output is a one-page document that drives every shoot day after.</p>
+    <div class="fivesteps__body reveal">
+      <ol class="fivesteps__list">
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">01</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Strategy. <em>Commercial outcome agreed first.</em></h3>
+            <p>Lisa runs the strategy phase on every retainer. Before any camera comes out, we agree the commercial outcome, the audience, the measurement plan, and the channels. The strategy doc is yours from day one.</p>
+          </div>
         </li>
-        <li class="svc-process__step reveal" data-step="1">
-          <span class="svc-process__num">02</span>
-          <h3>Shoot.</h3>
-          <p>One structured day a month. We turn up with the crew, the lighting, the kit. You turn up as you. We direct the rest. Six to eight hours, depending on scale.</p>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">02</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Shoot. <em>Lean crew, full kit.</em></h3>
+            <p>Steve directs, or one of the named roster leads who's been on a Fuelled brief before. Cameras, lighting, shot list, sound. The brand strategy decides what we shoot. We don't busk it.</p>
+          </div>
         </li>
-        <li class="svc-process__step reveal" data-step="2">
-          <span class="svc-process__num">03</span>
-          <h3>Edit.</h3>
-          <p>We cut the day into a month of content. Reels, posts, stories, long-form. All shot in one go, not chased week to week. You see the full set before anything is scheduled.</p>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">03</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Edit. <em>In-house suite. Approval-routed.</em></h3>
+            <p>Final Cut Pro, Premiere, CapCut, retouching. Every asset cut to its destination platform, colour-graded, captioned. Routed for your approval before publish. Nothing ships without you signing off.</p>
+          </div>
         </li>
-        <li class="svc-process__step reveal" data-step="3">
-          <span class="svc-process__num">04</span>
-          <h3>Post.</h3>
-          <p>We schedule it. We caption it. We hashtag it where it still helps. Nothing posts without your sign-off. The point of the shoot day is that you don't think about your social again until next month.</p>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">04</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Post. <em>Paid social where it earns.</em></h3>
+            <p>Scheduled across the platforms that matter. Paid social layered on top where the strategy calls for it. Paid social only - no Google Ads (priced past the point of attribution in our verticals).</p>
+          </div>
         </li>
-        <li class="svc-process__step reveal" data-step="4">
-          <span class="svc-process__num">05</span>
-          <h3>Improve.</h3>
-          <p>End of every month, we look at what worked. The next shoot leans into it. Nothing is set in stone, the strategy doc gets updated, and your producer sends you a one-page summary. No 30-slide deck.</p>
+        <li class="fivesteps__step">
+          <span class="fivesteps__step-num">05</span>
+          <div class="fivesteps__step-body">
+            <h3 class="fivesteps__step-title">Improve. <em>Reported to the CFO.</em></h3>
+            <p>Monthly review against the strategy. Attribution disclosed (date range, organic vs paid, view-through tracked). What worked. What didn't. What we're changing next month. The deck you take upstairs.</p>
+          </div>
         </li>
       </ol>
+
+      <aside class="fivesteps__witness">
+        <div class="fivesteps__witness-media">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="../assets/0_Woman_Luxury_1920x1080.mp4" type="video/mp4" />
+          </video>
+          <span class="fivesteps__witness-play" aria-hidden="true">▶</span>
+          <span class="fivesteps__witness-eyebrow">Watch a client story</span>
+        </div>
+        <figcaption class="fivesteps__witness-caption">
+          <blockquote>"They didn't just turn up with cameras. They helped me build a proper strategy for how to market the days, attract the right drivers and create excitement before we even opened bookings."</blockquote>
+          <div class="fivesteps__witness-attr">
+            <img class="fivesteps__witness-avatar" src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.42.16-300x260.png" alt="Jerry" />
+            <span><strong>Jerry</strong> &middot; Mox Spot, North Wales</span>
+          </div>
+        </figcaption>
+      </aside>
     </div>
   </div>
 </section>
 
-<!-- ============== SVC MONTH — week-by-week timeline ============== -->
-<section class="svc-month">
+<!-- ============== PRINCIPLES - five value pillars ============== -->
+<section class="principles">
   <div class="wrap">
-    <div class="svc-month__head reveal">
-      <p class="eyebrow">A month with Fuelled</p>
-      <h2>Four weeks. <em>This is what they look like.</em></h2>
-    </div>
+    <header class="principles__head reveal">
+      <p class="eyebrow">How we work</p>
+      <h2 class="principles__title">Commercial. Strategic. <em>Central. Transparent. Vetted.</em></h2>
+      <p class="principles__sub">Five principles, anchored in behaviour. No slogans.</p>
+    </header>
 
-    <div class="svc-month__rail">
-      <article class="svc-month__week svc-month__week--text svc-month__week--01 reveal">
-        <header class="svc-month__week-head">
-          <span class="svc-month__num">Week 01</span>
-          <span class="svc-month__node" aria-hidden="true"></span>
-        </header>
-        <h3>Strategy session.</h3>
-        <p>One Zoom, one document. We agree the angles for the shoot and what we're trying to move. Forty-five minutes, no waffle.</p>
-        <span class="svc-month__tag">You · 45 min</span>
-      </article>
-
-      <article class="svc-month__week svc-month__week--featured svc-month__week--02 reveal" style="--reveal-delay: 80ms;">
-        <div class="svc-month__media">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg" alt="Shoot day on location with crew" />
-        </div>
-        <div class="svc-month__week-content">
-          <header class="svc-month__week-head">
-            <span class="svc-month__num">Week 02</span>
-            <span class="svc-month__node" aria-hidden="true"></span>
-          </header>
-          <h3>Shoot day.</h3>
-          <p>Crew on site. You on camera. Six to eight hours, depending on scale. We bring everything. You bring yourself.</p>
-          <span class="svc-month__tag">You · 1 day</span>
-        </div>
-      </article>
-
-      <article class="svc-month__week svc-month__week--featured-light svc-month__week--03 reveal" style="--reveal-delay: 160ms;">
-        <div class="svc-month__media">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Copy-of-DSC08096.jpg" alt="Editing and approval workflow" />
-        </div>
-        <div class="svc-month__week-content">
-          <header class="svc-month__week-head">
-            <span class="svc-month__num">Week 03</span>
-            <span class="svc-month__node" aria-hidden="true"></span>
-          </header>
-          <h3>Edit and approval.</h3>
-          <p>You see the month's content laid out as one schedule. Approve, request changes, or both. Most clients spend twenty minutes on this.</p>
-          <span class="svc-month__tag">You · 20 min</span>
-        </div>
-      </article>
-
-      <article class="svc-month__week svc-month__week--text svc-month__week--04 reveal" style="--reveal-delay: 240ms;">
-        <header class="svc-month__week-head">
-          <span class="svc-month__num">Week 04</span>
-          <span class="svc-month__node" aria-hidden="true"></span>
-        </header>
-        <h3>Post and review.</h3>
-        <p>Content goes live on the schedule. End of week, your producer sends you a short note on what landed. Then we go again.</p>
-        <span class="svc-month__tag">You · 0 min</span>
-      </article>
-    </div>
+    <ol class="principles__grid reveal">
+      <li class="principles__card principles__card--01">
+        <span class="principles__num">01</span>
+        <h3 class="principles__card-title">Commercial-<em>first.</em></h3>
+        <p class="principles__card-body">We won't shoot if we shouldn't. Strategy starts with the commercial outcome, not the creative idea. We've talked clients out of bigger retainers than the one we ended up signing.</p>
+      </li>
+      <li class="principles__card principles__card--02">
+        <span class="principles__num">02</span>
+        <h3 class="principles__card-title">Strategy-<em>led.</em></h3>
+        <p class="principles__card-body">No camera comes out before the strategy is signed off. If the strategy can't be measured against a P&amp;L line, we don't ship the strategy.</p>
+      </li>
+      <li class="principles__card principles__card--03">
+        <span class="principles__num">03</span>
+        <h3 class="principles__card-title">Centrally <em>directed.</em></h3>
+        <p class="principles__card-body">Steve and Lisa own the through-line on every retainer. The roster executes to brief. Your producer doesn't change mid-engagement.</p>
+      </li>
+      <li class="principles__card principles__card--04">
+        <span class="principles__num">04</span>
+        <h3 class="principles__card-title">Transparent <em>by design.</em></h3>
+        <p class="principles__card-body">Pricing on the site. Notice terms on the site. Asset clauses on the site. No surprise media fees. No "it depends" answers on the first call.</p>
+      </li>
+      <li class="principles__card principles__card--05">
+        <span class="principles__num">05</span>
+        <h3 class="principles__card-title">Vetted <em>and capped.</em></h3>
+        <p class="principles__card-body">Roster builds slowly. Capped at six leads. Every roster lead has been on a Fuelled brief before they run one. Continuity is structural, not personal.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
-<!-- ============== SVC INCLUSIONS — what you get / what you keep ============== -->
-<section class="svc-incl">
+<!-- ============== WHAT YOU GET / KEEP / NOT FOR - three stacked blocks ============== -->
+<section class="trio">
   <div class="wrap">
-    <div class="svc-incl__head reveal">
-      <p class="eyebrow">The deliverables</p>
-      <h2>What you get. <em>And what you keep.</em></h2>
-    </div>
 
-    <div class="svc-incl__grid">
-      <article class="svc-incl__card svc-incl__card--get reveal">
-        <h3>What you get</h3>
-        <ul>
-          <li>A full content bank, edited and ready</li>
-          <li>A scheduled month of posts, written and timed</li>
-          <li>A monthly review with the founder, not a junior</li>
-          <li>A strategy document you can use beyond the contract</li>
-          <li>One producer who runs it. Same person every month.</li>
-        </ul>
-      </article>
-      <article class="svc-incl__card svc-incl__card--keep reveal" style="--reveal-delay: 80ms;">
-        <h3>What you keep</h3>
-        <ul>
-          <li>Every raw and edited file, on your drive, forever</li>
-          <li>Your accounts. Your audience. Your data.</li>
-          <li>The right to walk with one month's notice</li>
-          <li>No 60-day clause. No exit fee.</li>
-          <li>The strategy doc, even if you stop working with us</li>
-        </ul>
-      </article>
-    </div>
+    <!-- WHAT YOU GET -->
+    <article class="trio__block trio__block--get reveal">
+      <div class="trio__block-head">
+        <p class="eyebrow">Inside every retainer</p>
+        <h2 class="trio__title">A content team. <em>Without the content-team payroll.</em></h2>
+      </div>
+      <div class="trio__benefits">
+        <div class="trio__benefit">
+          <span class="trio__benefit-kicker">If you brief six freelancers a week,</span>
+          <span class="trio__benefit-payoff">try briefing one team once a month.</span>
+        </div>
+        <div class="trio__benefit">
+          <span class="trio__benefit-kicker">If your content calendar reads like committee work,</span>
+          <span class="trio__benefit-payoff">try strategy authored by people who've run P&amp;Ls.</span>
+        </div>
+        <div class="trio__benefit">
+          <span class="trio__benefit-kicker">If your shoot day eats your week,</span>
+          <span class="trio__benefit-payoff">try one structured day with a directed crew.</span>
+        </div>
+        <div class="trio__benefit">
+          <span class="trio__benefit-kicker">If your CFO is asking about content ROI,</span>
+          <span class="trio__benefit-payoff">try monthly attribution reports written for non-marketers.</span>
+        </div>
+        <div class="trio__benefit trio__benefit--feature">
+          <span class="trio__benefit-kicker">Plus access to an external team.</span>
+          <span class="trio__benefit-payoff">Not a vendor. Not a contractor pool. A team you can put on a Slack channel and brief like your own.</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- WHAT YOU KEEP - dark surface for contrast -->
+    <article class="trio__block trio__block--keep reveal">
+      <div class="trio__block-head">
+        <p class="eyebrow">When you walk</p>
+        <h2 class="trio__title">Walk in a month. <em>Take everything that matters with you.</em></h2>
+      </div>
+      <ul class="trio__list trio__list--checks">
+        <li>
+          <span class="trio__icon" aria-hidden="true">✓</span>
+          <div class="trio__check-body">
+            <strong class="trio__check-title">Your accounts, audience, data.</strong>
+            <span class="trio__check-sub">Plus the strategy doc, even if you cancel month one.</span>
+          </div>
+        </li>
+        <li>
+          <span class="trio__icon" aria-hidden="true">✓</span>
+          <div class="trio__check-body">
+            <strong class="trio__check-title">One month's notice.</strong>
+            <span class="trio__check-sub">No 60-day clause unless you've signed a 12-month retainer.</span>
+          </div>
+        </li>
+        <li>
+          <span class="trio__icon" aria-hidden="true">✓</span>
+          <div class="trio__check-body">
+            <strong class="trio__check-title">The asset bank in your drive.</strong>
+            <span class="trio__check-sub">Tagged, indexed, in the format and platform spec you need.</span>
+          </div>
+        </li>
+        <li>
+          <span class="trio__icon" aria-hidden="true">✓</span>
+          <div class="trio__check-body">
+            <strong class="trio__check-title">Finished cuts only.</strong>
+            <span class="trio__check-sub">We keep the source files so polished work stays polished - no surprise re-edits after handover.</span>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <!-- WHO WE'RE NOT FOR -->
+    <article class="trio__block trio__block--notfor reveal">
+      <div class="trio__block-head">
+        <p class="eyebrow">Save us both the call</p>
+        <h2 class="trio__title">Three kinds of brand <em>we won't be the right team for.</em></h2>
+      </div>
+      <ul class="trio__list trio__list--notfor">
+        <li>
+          <strong>Brands chasing the cheapest quote.</strong>
+          <span>If your shortlist is the £600 a month crowd, we're not the right team. Genuinely. There are freelancers who'll do that work, and some of them are brilliant.</span>
+        </li>
+        <li>
+          <strong>Brands hiring for "a nice photo and a nice video."</strong>
+          <span>If you can't tie content to revenue, we'll spend the first call talking you out of buying.</span>
+        </li>
+        <li>
+          <strong>Brands that want a one-off shoot with no strategic underpinning.</strong>
+          <span>Campaign work is fine as a door-opener. We won't take a campaign that doesn't lead to a strategic conversation about what's next.</span>
+        </li>
+      </ul>
+    </article>
+
   </div>
 </section>
 
-<!-- ============== SVC PRICE — the anchor ============== -->
-<section class="svc-price">
-  <span class="svc-price__bg" aria-hidden="true">£475</span>
+<!-- ============== VERSUS - comparison table ============== -->
+<section class="versus">
   <div class="wrap">
-    <div class="svc-price__inner reveal">
-      <p class="eyebrow">The number</p>
-      <h2 class="svc-price__headline">
-        From <span class="svc-price__amt">£475</span> a month.
-        <em>That's it.</em>
-      </h2>
-      <p class="svc-price__sub">
-        We don't list packages because every shoot day is different. We tell you the number on the call. <em>No surprise media fees. No 60-day notice. No "it depends".</em>
-      </p>
-      <div class="svc-price__ctas">
-        <a href="book-a-call.html" class="btn">Get your number <span class="arrow">&rarr;</span></a>
-        <a href="our-work.html" class="btn btn--ghost">See the work first</a>
+    <header class="versus__head reveal">
+      <p class="eyebrow">The maths your CFO will run anyway</p>
+      <h2 class="versus__title">Cheaper than one mid-tier hire. <em>Sharper than any agency.</em></h2>
+    </header>
+
+    <div class="versus__table reveal">
+      <div class="versus__row versus__row--head">
+        <div class="versus__cell versus__cell--label">Option</div>
+        <div class="versus__cell">What it costs</div>
+        <div class="versus__cell">What you get</div>
+        <div class="versus__cell">What's missing</div>
+      </div>
+
+      <div class="versus__row">
+        <div class="versus__cell versus__cell--label">Senior in-house hire</div>
+        <div class="versus__cell versus__cell--cost">£45k - £55k loaded</div>
+        <div class="versus__cell">One person who can post and caption</div>
+        <div class="versus__cell">Direction, production, multi-market strategy, second pair of eyes</div>
+      </div>
+
+      <div class="versus__row">
+        <div class="versus__cell versus__cell--label">Four-person in-house team</div>
+        <div class="versus__cell versus__cell--cost">£190k - £250k loaded / yr</div>
+        <div class="versus__cell">Full execution capacity</div>
+        <div class="versus__cell">Six months to recruit, 12-18 month tenure, no roster redundancy</div>
+      </div>
+
+      <div class="versus__row">
+        <div class="versus__cell versus__cell--label">Big-agency retainer</div>
+        <div class="versus__cell versus__cell--cost">£4,000+ / month</div>
+        <div class="versus__cell">Strategy and creative on paper</div>
+        <div class="versus__cell">A senior who pitched you; junior staff who execute; no production crew</div>
+      </div>
+
+      <div class="versus__row">
+        <div class="versus__cell versus__cell--label">Cheap freelancer</div>
+        <div class="versus__cell versus__cell--cost">£200 - £800 / month</div>
+        <div class="versus__cell">Captions and schedule</div>
+        <div class="versus__cell">Strategy, direction, production, attribution</div>
+      </div>
+
+      <div class="versus__row versus__row--us">
+        <div class="versus__cell versus__cell--label">
+          <span class="versus__us-tag">Fuelled retainer</span>
+        </div>
+        <div class="versus__cell versus__cell--cost versus__cell--lime"><strong>From £2,475 / month</strong></div>
+        <div class="versus__cell">All five steps. One team. One brief. One bill.</div>
+        <div class="versus__cell">Nothing your CFO can't explain.</div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============== SVC FAQ — accordion ============== -->
-<section class="svc-faq">
-  <div class="wrap">
-    <div class="svc-faq__head reveal">
-      <p class="eyebrow">Straight answers</p>
-      <h2>The questions <em>everyone asks first.</em></h2>
-    </div>
+    <p class="versus__sub reveal">The retainer that earns its rate by replacing the others.</p>
 
-    <div class="svc-faq__list">
-      <details class="svc-faq__item reveal" open>
-        <summary>
-          <span class="svc-faq__q">Will it take hours of my time to make this content?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>No. The shoot day is the time investment. Six to eight hours, once a month. After that, your only job is approving the posts before they go live. Most clients spend less than half an hour a week on this once we're up and running.</p>
-        </div>
-      </details>
-
-      <details class="svc-faq__item reveal">
-        <summary>
-          <span class="svc-faq__q">Can I keep the assets if we stop working together?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>Yes. Every file we shoot is yours. The raws, the edits, the strategy document. You walk with all of it. We don't believe in holding assets hostage. Your business funded the shoot, your business owns the output.</p>
-        </div>
-      </details>
-
-      <details class="svc-faq__item reveal">
-        <summary>
-          <span class="svc-faq__q">Can I approve every post before it goes live?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>Yes. Nothing posts without your sign-off. We send the month's plan, you tick what you like, we adjust the rest. After the first month or two, most clients let us run with light-touch approval, but it's your call.</p>
-        </div>
-      </details>
-
-      <details class="svc-faq__item reveal">
-        <summary>
-          <span class="svc-faq__q">What's the notice period?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>One month. No 60-day clauses. No annual retainer lock-in. If it isn't working, you stop. We'd rather lose a client than trap one. The honest version: most agencies use long notice periods to mask churn. We don't need to.</p>
-        </div>
-      </details>
-
-      <details class="svc-faq__item reveal">
-        <summary>
-          <span class="svc-faq__q">What if my business isn't a good fit?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>We'll tell you on the call. We turn down more enquiries than we take. If content isn't going to move the needle for you, we'll say so, and point you somewhere that will. The first call costs you nothing and there's no proposal-by-stealth.</p>
-        </div>
-      </details>
-
-      <details class="svc-faq__item reveal">
-        <summary>
-          <span class="svc-faq__q">Do you do paid ads?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>No. We're the production and posting partner. If you're running ads alongside us, our content gives you better material to spend on. Most clients see the organic work outperform paid once the content is genuinely good.</p>
-        </div>
-      </details>
-
-      <details class="svc-faq__item reveal">
-        <summary>
-          <span class="svc-faq__q">Where do you shoot?</span>
-          <span class="svc-faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="svc-faq__a">
-          <p>UK and Europe. Most days are in the UK. Some are in Mallorca and the wider Mediterranean for hospitality and yachting clients. Travel is built into the number on the call, no surprise invoices.</p>
-        </div>
-      </details>
+    <div class="versus__cta reveal">
+      <a href="service-options.html" class="btn">See the tiers <span class="arrow">&rarr;</span></a>
+      <a href="#deck" class="btn btn--ghost">Download the deck</a>
     </div>
   </div>
 </section>
 
-<!-- ============== END CTA — identical to homepage ============== -->
+<!-- ============== END CTA - hands off to service-options ============== -->
 <section class="end-cta">
   <div class="wrap">
     <div class="end-cta__inner reveal">
       <div>
-        <p class="eyebrow" style="margin-bottom: var(--sp-7);">Ready when you are</p>
+        <p class="eyebrow" style="margin-bottom: var(--sp-7);">The fourth option</p>
         <h2 class="end-cta__heading">
-          Tell us what your business <em>actually does.</em>
+          Brief us once. <em>We do the rest.</em>
+          <span class="end-cta__plug">From £2,475 a month.</span>
         </h2>
       </div>
       <div class="end-cta__body">
         <p class="end-cta__sub">
-          Thirty minutes on the phone. <em>We'll tell you straight whether content will move the needle for you</em>, before you've spent a penny. No proposal-by-stealth. No hard sell. If it isn't the right fit, we'll say so.
+          Thirty minutes on a call. <em>We tell you straight whether content will move the needle for your business</em>, before you've spent a penny. Or take the deck to your CMO first. Either works.
         </p>
         <div class="end-cta__ctas">
-          <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
-          <a href="learning-hub.html" class="btn btn--ghost">Read the Learning Hub</a>
+          <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
+          <a href="service-options.html" class="btn btn--ghost">See the tiers and pricing</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============== FOOTER — identical to homepage ============== -->
+<!-- ============== FOOTER ============== -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <a href="index.html" aria-label="Fuelled Agency"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" /></a>
-        <p>Full-stack social production for owner-led businesses. Crew on site, founder on camera, strategy through edit through post as one package. From £475 a month.</p>
+        <a href="index.html" aria-label="Fuelled Agency"><img src="../assets/Fuelled-white.png" alt="Fuelled Agency" /></a>
+        <p>A media company for marketing teams. Strategy, production, paid, and measurement, run as your in-house team would. For brands turning over £5m and up. From £2,475 a month.</p>
         <div class="site-footer__brand-social">
           <a href="https://www.instagram.com/fuelledagency" aria-label="Instagram">IG</a>
           <a href="https://www.facebook.com/Fuelledagency/" aria-label="Facebook">FB</a>
@@ -550,6 +505,7 @@
         <h5>Site</h5>
         <ul>
           <li><a href="what-we-do.html">What we do</a></li>
+          <li><a href="service-options.html">Pricing</a></li>
           <li><a href="our-work.html">Our work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="learning-hub.html">Learning Hub</a></li>
@@ -558,28 +514,73 @@
       <div>
         <h5>Get in touch</h5>
         <ul>
-          <li><a href="book-a-call.html">Book a call</a></li>
+          <li><a href="book-a-call.html">Let's chat</a></li>
+          <li><a href="#deck">Download the deck</a></li>
           <li><a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a></li>
         </ul>
       </div>
       <div>
         <h5>Where we work</h5>
         <ul>
-          <li>UK · all regions</li>
-          <li>Europe · Mallorca, Mediterranean</li>
+          <li>UK &middot; all regions</li>
+          <li>Europe &middot; Mallorca, Mediterranean</li>
           <li>Remote planning, on-site shoots</li>
         </ul>
       </div>
     </div>
 
     <div class="site-footer__bottom">
-      <span>© Fuelled Media Ltd. Registered in England and Wales · Company no. 17070139</span>
-      <span><a href="/privacy-policy/">Privacy policy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a></span>
+      <span>© Fuelled Media Ltd. Registered in England and Wales &middot; Company no. 17070139</span>
+      <span><a href="/privacy-policy/">Privacy policy</a> &nbsp;&middot;&nbsp; <a href="/terms">Terms</a></span>
     </div>
 
     <p class="site-footer__wordmark" aria-hidden="true">Fuelled.</p>
   </div>
 </footer>
+
+<!-- Floating PiP testimonial widget -->
+<button class="pip" id="pip" aria-label="Open testimonial">
+  <span class="pip__media">
+    <video id="pip-video" autoplay muted loop playsinline preload="metadata">
+      <source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" />
+    </video>
+    <svg viewBox="0 0 60 60" aria-hidden="true">
+      <circle class="pip__ring-bg" cx="30" cy="30" r="29" />
+      <circle class="pip__ring-fg" id="pip-ring" cx="30" cy="30" r="29" pathLength="100" />
+    </svg>
+  </span>
+  <span class="pip__label">
+    <span class="pip__label-eyebrow">Watch the story</span>
+    <span class="pip__label-name" id="pip-name">Jerry</span>
+  </span>
+  <span class="pip__close" id="pip-close" aria-label="Dismiss">&times;</span>
+</button>
+
+<!-- Shared testimonial modal -->
+<div class="tm-modal" id="tm-modal" role="dialog" aria-modal="true" aria-labelledby="tm-modal-name" hidden>
+  <div class="tm-modal__inner">
+    <button class="tm-modal__close" id="tm-modal-close" aria-label="Close">&times;</button>
+    <div class="tm-modal__video">
+      <video id="tm-modal-video" controls playsinline preload="metadata"></video>
+      <button class="tm-modal__nav tm-modal__nav--prev" id="tm-modal-prev" aria-label="Previous testimonial">&larr;</button>
+      <button class="tm-modal__nav tm-modal__nav--next" id="tm-modal-next" aria-label="Next testimonial">&rarr;</button>
+    </div>
+    <div class="tm-modal__content">
+      <div class="tm-modal__head">
+        <span class="tm-modal__eyebrow">Client story</span>
+        <span class="tm-modal__counter"><strong id="tm-modal-counter-current">01</strong> / <span id="tm-modal-counter-total">03</span></span>
+      </div>
+      <p class="tm-modal__quote" id="tm-modal-quote"></p>
+      <div class="tm-modal__attr">
+        <img class="tm-modal__avatar" id="tm-modal-avatar" src="" alt="" />
+        <div class="tm-modal__attr-text">
+          <strong id="tm-modal-name"></strong>
+          <span id="tm-modal-business"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   // ====== CUSTOM CURSOR ======
@@ -587,35 +588,24 @@
     const fine = window.matchMedia('(pointer: fine)').matches;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!fine || reduce) return;
-
     const dot = document.querySelector('.cursor-dot');
     const orb = document.querySelector('.cursor-orb');
     if (!dot || !orb) return;
-
     let mx = window.innerWidth / 2, my = window.innerHeight / 2;
     let gx = mx, gy = my;
-    let raf = 0;
-
     const loop = () => {
-      gx += (mx - gx) * 0.18;
-      gy += (my - gy) * 0.18;
-      dot.style.setProperty('--mx', `${mx}px`);
-      dot.style.setProperty('--my', `${my}px`);
-      orb.style.setProperty('--gx', `${gx}px`);
-      orb.style.setProperty('--gy', `${gy}px`);
-      raf = requestAnimationFrame(loop);
+      gx += (mx - gx) * 0.18; gy += (my - gy) * 0.18;
+      dot.style.setProperty('--mx', `${mx}px`); dot.style.setProperty('--my', `${my}px`);
+      orb.style.setProperty('--gx', `${gx}px`); orb.style.setProperty('--gy', `${gy}px`);
+      requestAnimationFrame(loop);
     };
-    raf = requestAnimationFrame(loop);
-
+    requestAnimationFrame(loop);
     window.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; }, { passive: true });
     document.addEventListener('mouseleave', () => { dot.classList.add('is-out'); orb.classList.add('is-out'); });
     document.addEventListener('mouseenter', () => { dot.classList.remove('is-out'); orb.classList.remove('is-out'); });
-
-    const interactiveSel = 'a, button, .btn, [role="button"], input, textarea, select, summary, .svc-fit__card, .svc-month__week, .svc-incl__card';
+    const interactiveSel = 'a, button, .btn, [role="button"], input, textarea, select, .bento-card, .ic, .fivesteps__witness, .oldway__card, .principles__item, .trio__block, .versus__row';
     document.addEventListener('mouseover', (e) => {
-      if (e.target.closest(interactiveSel)) {
-        dot.classList.add('is-active'); orb.classList.add('is-active');
-      }
+      if (e.target.closest(interactiveSel)) { dot.classList.add('is-active'); orb.classList.add('is-active'); }
     });
     document.addEventListener('mouseout', (e) => {
       if (e.target.closest(interactiveSel) && !e.relatedTarget?.closest?.(interactiveSel)) {
@@ -626,56 +616,104 @@
 
   // ====== SCROLL-REVEAL ======
   (function () {
-    if (!('IntersectionObserver' in window)) {
-      document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
-      return;
-    }
+    const els = document.querySelectorAll('.reveal, .reveal-img');
+    if (!('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('is-visible')); return; }
     const io = new IntersectionObserver((entries) => {
-      entries.forEach(en => {
-        if (en.isIntersecting) {
-          en.target.classList.add('is-visible');
-          io.unobserve(en.target);
-        }
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => io.observe(el));
   })();
 
-  // ====== PROCESS STICKY MEDIA — swap image as each step enters viewport ======
+  // ====== MAGNETIC CTAs ======
   (function () {
-    const section = document.querySelector('.svc-process');
-    if (!section) return;
-    const steps = section.querySelectorAll('.svc-process__step');
-    const medias = section.querySelectorAll('.svc-process__media');
-    if (!steps.length || !medias.length) return;
-
-    const setActive = (i) => {
-      medias.forEach((m, idx) => m.classList.toggle('is-active', idx === i));
-      steps.forEach((s, idx) => s.classList.toggle('is-current', idx === i));
-    };
-    setActive(0);
-
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(en => {
-        if (en.isIntersecting) {
-          const i = Number(en.target.dataset.step || 0);
-          setActive(i);
-        }
-      });
-    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
-    steps.forEach(s => io.observe(s));
-  })();
-
-  // ====== FAQ — exclusive accordion (close others when one opens) ======
-  (function () {
-    const items = document.querySelectorAll('.svc-faq__item');
-    if (!items.length) return;
-    items.forEach(item => {
-      item.addEventListener('toggle', () => {
-        if (!item.open) return;
-        items.forEach(other => { if (other !== item && other.open) other.open = false; });
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    document.querySelectorAll('.btn').forEach(btn => {
+      let inside = false;
+      btn.addEventListener('mouseenter', () => { inside = true; });
+      btn.addEventListener('mouseleave', () => { inside = false; btn.style.setProperty('--mx','0px'); btn.style.setProperty('--my','0px'); });
+      btn.addEventListener('mousemove', (e) => {
+        if (!inside) return;
+        const r = btn.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width - 0.5) * 12;
+        const y = ((e.clientY - r.top) / r.height - 0.5) * 8;
+        btn.style.setProperty('--mx', x.toFixed(1) + 'px'); btn.style.setProperty('--my', y.toFixed(1) + 'px');
       });
     });
+  })();
+
+  // ====== PIP TESTIMONIAL WIDGET + SHARED MODAL ======
+  (function () {
+    const stories = [
+      { video: '../assets/0_Woman_Bathrobe_1920x1080.mp4', avatar: 'https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.42.16-300x260.png', name: 'Jerry', business: 'Mox Spot, North Wales', quote: "They didn't just turn up with cameras. They helped me build a proper strategy for how to market the days, attract the right drivers and create excitement before we even opened bookings." },
+      { video: '../assets/6757713_Boat_Yacht_1920x1080.mp4', avatar: 'https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.39.30-300x261.png', name: 'Rory Dixon', business: '', quote: 'Working with Steve and the team at Fuelled has been nothing short of exceptional. The entire experience was seamless, enjoyable, and the results exceeded expectations. Truly a five-star team.' },
+      { video: '../assets/0_Woman_Luxury_1920x1080.mp4', avatar: 'https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-18.38.50-300x261.png', name: 'Thomas', business: '', quote: "I've been working with Steve and the team at Fuelled for a few years now. They are bang on it, business minded and very organised. I get the complete package with them and I am very happy." }
+    ];
+    const pip = document.getElementById('pip');
+    const pipVideo = document.getElementById('pip-video');
+    const pipName = document.getElementById('pip-name');
+    const pipRing = document.getElementById('pip-ring');
+    const pipClose = document.getElementById('pip-close');
+    const modal = document.getElementById('tm-modal');
+    const modalVideo = document.getElementById('tm-modal-video');
+    const modalQuote = document.getElementById('tm-modal-quote');
+    const modalName = document.getElementById('tm-modal-name');
+    const modalBusiness = document.getElementById('tm-modal-business');
+    const modalClose = document.getElementById('tm-modal-close');
+    const modalPrev = document.getElementById('tm-modal-prev');
+    const modalNext = document.getElementById('tm-modal-next');
+    const modalCounterCurrent = document.getElementById('tm-modal-counter-current');
+    const modalCounterTotal = document.getElementById('tm-modal-counter-total');
+    const modalAvatar = document.getElementById('tm-modal-avatar');
+    if (!pip || !modal) return;
+    let modalIdx = 0, activeIdx = 0, dismissed = false;
+    const pad2 = (n) => String(n).padStart(2, '0');
+    const CYCLE_MS = 9000; let cycleStart = performance.now();
+    const setPipStory = (i) => {
+      activeIdx = i; const s = stories[i]; pipName.textContent = s.name;
+      const src = pipVideo.querySelector('source');
+      if (src && src.getAttribute('src') !== s.video) { src.setAttribute('src', s.video); pipVideo.load(); pipVideo.play().catch(() => {}); }
+      cycleStart = performance.now();
+    };
+    const tickCycle = () => {
+      if (dismissed) return;
+      const p = Math.min(1, (performance.now() - cycleStart) / CYCLE_MS);
+      pipRing.style.setProperty('--p', p.toFixed(3)); pipRing.style.setProperty('--circumference', '100');
+      if (p >= 1) setPipStory((activeIdx + 1) % stories.length);
+      requestAnimationFrame(tickCycle);
+    };
+    const onScroll = () => { if (dismissed) return; pip.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.7); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    const setModalStory = (i) => {
+      modalIdx = ((i % stories.length) + stories.length) % stories.length;
+      const s = stories[modalIdx];
+      modalQuote.textContent = s.quote; modalName.textContent = s.name; modalBusiness.textContent = s.business || '';
+      modalAvatar.src = s.avatar || ''; modalAvatar.alt = s.name + ' avatar';
+      modalVideo.innerHTML = '<source src="' + s.video + '" type="video/mp4" />';
+      modalVideo.load(); modalVideo.play().catch(() => {});
+      modalCounterCurrent.textContent = pad2(modalIdx + 1); modalCounterTotal.textContent = pad2(stories.length);
+      const single = stories.length <= 1; modalPrev.classList.toggle('is-hidden', single); modalNext.classList.toggle('is-hidden', single);
+    };
+    const openModal = (i) => { setModalStory(i); modal.hidden = false; requestAnimationFrame(() => { modal.classList.add('is-open'); document.body.classList.add('modal-open'); }); };
+    window.__fuelledOpenStory = openModal;
+    const closeModal = () => { modal.classList.remove('is-open'); document.body.classList.remove('modal-open'); modalVideo.pause(); setTimeout(() => { modal.hidden = true; }, 280); };
+    modalPrev.addEventListener('click', (e) => { e.stopPropagation(); setModalStory(modalIdx - 1); });
+    modalNext.addEventListener('click', (e) => { e.stopPropagation(); setModalStory(modalIdx + 1); });
+    pip.addEventListener('click', (e) => { if (e.target === pipClose || pipClose.contains(e.target)) return; openModal(activeIdx); });
+    pipClose.addEventListener('click', (e) => { e.stopPropagation(); dismissed = true; pip.classList.add('is-dismissed'); });
+    const witness = document.querySelector('.fivesteps__witness');
+    if (witness) witness.addEventListener('click', () => openModal(0));
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => {
+      if (modal.hidden) return;
+      if (e.key === 'Escape') closeModal();
+      else if (e.key === 'ArrowLeft' && stories.length > 1) setModalStory(modalIdx - 1);
+      else if (e.key === 'ArrowRight' && stories.length > 1) setModalStory(modalIdx + 1);
+    });
+    setPipStory(0); requestAnimationFrame(tickCycle); onScroll();
   })();
 
   // ====== MOBILE MENU TOGGLE ======
@@ -683,24 +721,17 @@
     const toggle = document.getElementById('nav-toggle');
     const closeBtn = document.getElementById('mobile-menu-close');
     const menu = document.getElementById('mobile-menu');
+    const mmTest = document.getElementById('mm-testimonial');
     if (!toggle || !menu) return;
-
-    const open = () => {
-      menu.classList.add('is-open');
-      menu.setAttribute('aria-hidden', 'false');
-      toggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    };
-    const close = () => {
-      menu.classList.remove('is-open');
-      menu.setAttribute('aria-hidden', 'true');
-      toggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    };
-    toggle.addEventListener('click', open);
-    closeBtn?.addEventListener('click', close);
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu.classList.contains('is-open')) close(); });
+    const openMenu = () => { toggle.classList.add('is-active'); toggle.setAttribute('aria-expanded','true'); menu.classList.add('is-open'); menu.setAttribute('aria-hidden','false'); document.body.classList.add('menu-open'); };
+    const closeMenu = () => { toggle.classList.remove('is-active'); toggle.setAttribute('aria-expanded','false'); menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true'); document.body.classList.remove('menu-open'); };
+    toggle.addEventListener('click', () => { if (menu.classList.contains('is-open')) closeMenu(); else openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setTimeout(closeMenu, 50)));
+    if (mmTest) mmTest.addEventListener('click', () => { closeMenu(); setTimeout(() => { const opener = window.__fuelledOpenStory; if (typeof opener === 'function') opener(0); }, 320); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu.classList.contains('is-open')) closeMenu(); });
+    const mq = window.matchMedia('(min-width: 881px)');
+    mq.addEventListener('change', (e) => { if (e.matches) closeMenu(); });
   })();
 </script>
 

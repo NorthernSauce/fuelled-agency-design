@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our work. Real businesses. Real cameras. Real numbers. — Fuelled Agency</title>
+  <title>Our work. Real businesses. Real cameras. Real numbers.  -  Fuelled Agency</title>
   <meta name="description" content="Selected work from Fuelled Agency. Owner-led businesses, on camera, across aviation, lifestyle, luxury yachting and relocation. Numbers we can show you, no paid boost." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +17,12 @@
 
 <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <div class="mobile-menu__bg" aria-hidden="true">
-    <video autoplay muted loop playsinline preload="metadata"><source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
+    <video autoplay muted loop playsinline preload="metadata"><source src="../assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
   </div>
   <div class="mobile-menu__overlay" aria-hidden="true"></div>
   <div class="mobile-menu__inner">
     <div class="mobile-menu__top">
-      <a href="index.html" aria-label="Fuelled Agency home"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" /></a>
+      <a href="index.html" aria-label="Fuelled Agency home"><img src="../assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" /></a>
       <button class="nav-toggle is-active" id="mobile-menu-close" aria-label="Close menu"><span></span><span></span><span></span></button>
     </div>
     <nav class="mobile-menu__nav" aria-label="Mobile primary">
@@ -39,15 +39,16 @@
   </div>
 </aside>
 
-<!-- ============== ARCHIVE HERO — left-aligned monumental, no bg image ============== -->
+<!-- ============== ARCHIVE HERO  -  left-aligned monumental, no bg image ============== -->
 <section class="archive-hero">
   <header class="site-header site-header--solid">
     <div class="wrap site-header__inner">
       <a href="index.html" class="brand" aria-label="Fuelled Agency home">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" class="brand__logo" />
+        <img src="../assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" />
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="what-we-do.html" class="nav-link">What we do</a>
+        <a href="service-options.html" class="nav-link">Pricing</a>
         <a href="our-work.html" class="nav-link is-current">Our work</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="learning-hub.html" class="nav-link">Learning Hub</a>
@@ -88,7 +89,7 @@
   </div>
 </section>
 
-<!-- ============== ARCHIVE — cards flush on the page bg, no bento wrapper ============== -->
+<!-- ============== ARCHIVE  -  cards flush on the page bg, no bento wrapper ============== -->
 <section class="archive-flush">
   <div class="wrap">
     <div class="work-bento">
@@ -158,11 +159,13 @@
   <div class="wrap">
     <div class="site-footer__top">
       <div class="site-footer__brand">
-        <a href="index.html" aria-label="Fuelled Agency"><img src="https://fuelledagency.com/wp-content/uploads/2026/02/FuelledAgencyLogo.png" alt="Fuelled Agency" /></a>
+        <a href="index.html" aria-label="Fuelled Agency"><img src="../assets/Fuelled-white.png" alt="Fuelled Agency" /></a>
         <p>Full-stack social production for owner-led businesses. Crew on site, founder on camera, strategy through edit through post as one package. From £475 a month.</p>
         <div class="site-footer__brand-social"><a href="https://www.instagram.com/fuelledagency">IG</a><a href="https://www.facebook.com/Fuelledagency/">FB</a><a href="https://www.tiktok.com/@fuelledagency">TT</a><a href="https://www.linkedin.com/company/fuelled-agency">LI</a></div>
       </div>
-      <div><h5>Site</h5><ul><li><a href="what-we-do.html">What we do</a></li><li><a href="our-work.html">Our work</a></li><li><a href="about.html">About</a></li><li><a href="learning-hub.html">Learning Hub</a></li></ul></div>
+      <div><h5>Site</h5><ul><li><a href="what-we-do.html">What we do</a></li>
+          <li><a href="service-options.html">Pricing</a></li>
+          <li><a href="our-work.html">Our work</a></li><li><a href="about.html">About</a></li><li><a href="learning-hub.html">Learning Hub</a></li></ul></div>
       <div><h5>Get in touch</h5><ul><li><a href="book-a-call.html">Book a call</a></li><li><a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a></li></ul></div>
       <div><h5>Where we work</h5><ul><li>UK · all regions</li><li>Europe · Mallorca, Mediterranean</li><li>Remote planning, on-site shoots</li></ul></div>
     </div>
@@ -195,7 +198,7 @@
     const io = new IntersectionObserver(e => e.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } }), { rootMargin:'0px 0px -8% 0px', threshold:0.08 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   })();
-  // Filter chips — purely cosmetic for now (active state toggle only)
+  // Filter chips  -  purely cosmetic for now (active state toggle only)
   (function () {
     document.querySelectorAll('.archive-hero__chip').forEach(c => {
       c.addEventListener('click', () => {

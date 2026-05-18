@@ -1,12 +1,12 @@
-# Fuelled Agency — Website Design (v2)
+# Fuelled Agency - Website Design (v2)
 
 Static design prototype for client review, served via GitHub Pages.
 
 ## Pages
 
-- [`index.html`](index.html) — Homepage
-- [`what-we-do.html`](what-we-do.html) — Service page
-- [`design-brief.md`](design-brief.md) — Design system + decisions reference
+- [`index.html`](index.html) - Homepage
+- [`what-we-do.html`](what-we-do.html) - Service page
+- [`design-brief.md`](design-brief.md) - Design system + decisions reference
 
 ## Stack
 
