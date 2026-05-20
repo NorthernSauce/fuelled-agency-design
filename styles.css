@@ -9121,3 +9121,39 @@
   font-family: var(--ff-body); font-size: var(--fs-300); line-height: 1.55;
   color: var(--c-text-soft); margin: 0; max-width: 36ch;
 }
+
+/* ===================================================================
+   HERO - bare variant (no background image, tighter top padding)
+   Used on archive pages where the hero is just a title strip on the
+   page's dark background.
+   =================================================================== */
+.hero--bare { min-height: auto; background: transparent; }
+.hero--bare .hero__inner {
+  padding-block: clamp(96px, 11vw, 140px) clamp(16px, 2vw, 32px);
+}
+
+/* ===================================================================
+   ARCHIVE-FLUSH - uniform variant (3-col equal cards, tighter top)
+   Used on our-work archive to override bento sizing with a uniform grid.
+   =================================================================== */
+.archive-flush--uniform { padding-top: 0; }
+.archive-flush--uniform .work-bento--uniform {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+@media (min-width: 760px) {
+  .archive-flush--uniform .work-bento--uniform {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  /* Override every bento variant so cards are uniform inside this grid */
+  .work-bento--uniform .bento-card,
+  .work-bento--uniform .bento-card--lead,
+  .work-bento--uniform .bento-card--portrait,
+  .work-bento--uniform .bento-card--wide,
+  .work-bento--uniform .bento-card--standard {
+    grid-column: span 1;
+    grid-row: auto;
+    aspect-ratio: 4/3;
+  }
+}
