@@ -39,9 +39,13 @@
   </div>
 </aside>
 
-<!-- ============== HUB HERO  -  dark, cinematic, matches site language ============== -->
-<section class="hub-hero">
-  <header class="site-header site-header--solid">
+<!-- ============== HERO - inherits site hero pattern ============== -->
+<section class="hero">
+  <div class="hero__media" aria-hidden="true">
+    <img src="https://fuelledagency.com/wp-content/uploads/2026/02/DSC08953.jpg" alt="" />
+  </div>
+
+  <header class="site-header">
     <div class="wrap site-header__inner">
       <a href="index.html" class="brand" aria-label="Fuelled Agency home">
         <img src="assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" />
@@ -51,23 +55,21 @@
         <a href="service-options.html" class="nav-link">Pricing</a>
         <a href="our-work.html" class="nav-link">Our work</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="learning-hub.html" class="nav-link is-current">Learning Hub</a>
-        <a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a>
+        <a href="learning-hub.html" class="nav-link" aria-current="page">Learning Hub</a>
+        <a href="book-a-call.html" class="btn">Let's chat <span class="arrow">&rarr;</span></a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
       </nav>
     </div>
   </header>
 
-  <span class="hub-hero__rotate" aria-hidden="true">Fuelled / Learning Hub / 2026</span>
-
-  <div class="wrap hub-hero__inner">
-    <span class="eyebrow hub-hero__eyebrow reveal">Learning Hub</span>
-    <h1 class="hub-hero__headline reveal">
+  <div class="wrap hero__inner">
+    <span class="hero__badge">Pre-call homework, done for you</span>
+    <h1 class="hero__headline">
       The questions
       <em>other agencies dodge.</em>
     </h1>
-    <p class="hub-hero__sub reveal">
-      Plain English answers for owner-led businesses. <em>Case studies, strategy notes, and the unfiltered take on what content actually moves.</em>
+    <p class="hero__sub">
+      What we'd want to know <em>if we were on your side of the table.</em> Articles for marketing directors shortlisting content partners. Honest answers to the questions a sales call won't give you fast enough. Forward any of them to your CMO.
     </p>
 
     <form class="hub-search reveal" role="search" onsubmit="return false;">
@@ -159,8 +161,8 @@
   </div>
 </section>
 
-<!-- ============== ARCHIVE  -  flush on dark page bg, bento-card vocabulary ============== -->
-<section class="archive-flush">
+<!-- ============== ARCHIVE - uniform 3-column article grid ============== -->
+<section class="hub-grid">
   <div class="wrap">
     <div class="hub-featured__head reveal" style="margin-bottom: clamp(32px, 4vw, 56px);">
       <div>
@@ -169,77 +171,167 @@
       </div>
       <a href="#hub-grid">Jump to oldest <span class="arrow" aria-hidden="true">&rarr;</span></a>
     </div>
-    <div class="work-bento" id="hub-grid">
 
-      <!-- Featured / latest as the lead card -->
-      <a href="learning-hub-article.html" class="bento-card bento-card--lead reveal" data-cat="insights">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/DSC08953.jpg" alt="Documentary content shoot in the Mediterranean" class="bento-card__img" />
-        <span class="bento-card__stat">Latest post</span>
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Insights &middot; 7 min read</span>
-          <span class="bento-card__title">The rise of documentary-style content marketing. Why authenticity wins.</span>
-          <span class="bento-card__more">Read the article <span class="arrow">&rarr;</span></span>
+    <div class="hub-grid__list" id="hub-grid">
+      <a href="learning-hub-article.html" class="post-card reveal" data-cat="insights">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/DSC08953.jpg" alt="Documentary content shoot in the Mediterranean" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Insights</span>
+          <h3>The rise of documentary-style content marketing. Why authenticity wins.</h3>
+          <p>The shift from polished ad units to documentary edits, and why marketing directors at owner-led brands are leading it.</p>
+          <div class="post-card__meta">
+            <span>Steve Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>May 14, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>7 min read</span>
+          </div>
         </div>
       </a>
 
-      <a href="case-story-library.html" class="bento-card bento-card--portrait reveal" data-cat="case-studies" style="--reveal-delay: 80ms;">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg" alt="Building a story-driven content library in one shoot" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Case study &middot; March 9</span>
-          <span class="bento-card__title">A story-driven content library, in one shoot day.</span>
-          <span class="bento-card__more">Read the case study <span class="arrow">&rarr;</span></span>
+      <a href="case-story-library.html" class="post-card reveal" data-cat="case-studies" style="--reveal-delay: 80ms;">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/IMG_3643.jpg" alt="Building a story-driven content library in one shoot" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Case study</span>
+          <h3>A story-driven content library, in one shoot day.</h3>
+          <p>How one well-directed day of filming produced a hundred-plus assets that ran for a full quarter.</p>
+          <div class="post-card__meta">
+            <span>Lisa Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>March 9, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>6 min read</span>
+          </div>
         </div>
       </a>
 
-      <a href="case-search-led-tiktok.html" class="bento-card bento-card--wide reveal" data-cat="case-studies" style="--reveal-delay: 160ms;">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Heli-2048x1944.jpg" alt="Search-led TikTok content for an aviation training brand" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Case study &middot; February 24</span>
-          <span class="bento-card__title">Search-led TikTok. Results in thirty days.</span>
+      <a href="case-search-led-tiktok.html" class="post-card reveal" data-cat="case-studies" style="--reveal-delay: 160ms;">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Heli-2048x1944.jpg" alt="Search-led TikTok content for an aviation training brand" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Case study</span>
+          <h3>Search-led TikTok. Results in thirty days.</h3>
+          <p>How an aviation training brand pulled qualified demand from TikTok search inside a month, with zero paid spend.</p>
+          <div class="post-card__meta">
+            <span>Steve Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>February 24, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>5 min read</span>
+          </div>
         </div>
       </a>
 
-      <a href="learning-hub-article.html" class="bento-card bento-card--standard reveal" data-cat="industry" style="--reveal-delay: 240ms;">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DJI_20260115103355_0560_D-scaled.jpg" alt="Yachting drone capture for a luxury maritime brand" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Industry &middot; March 8</span>
-          <span class="bento-card__title">Social media management for yachting brands.</span>
+      <a href="learning-hub-article.html" class="post-card reveal" data-cat="industry" style="--reveal-delay: 240ms;">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DJI_20260115103355_0560_D-scaled.jpg" alt="Yachting drone capture for a luxury maritime brand" />
         </div>
-      </a>
-    </div>
-
-    <!-- Second row  -  same vocabulary -->
-    <div class="work-bento work-bento--alt">
-      <a href="case-human-led-visibility.html" class="bento-card bento-card--wide reveal" data-cat="case-studies">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/2-1.jpg" alt="Human-led content for a Spain relocation brand" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Case study &middot; February 18</span>
-          <span class="bento-card__title">Human-led visibility, driving qualified demand.</span>
-        </div>
-      </a>
-
-      <a href="case-documentary-authority.html" class="bento-card bento-card--standard reveal" data-cat="case-studies" style="--reveal-delay: 80ms;">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/2.jpg" alt="Documentary content for a luxury yachting brand" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Case study &middot; February 11</span>
-          <span class="bento-card__title">Documentary content. Brand authority, in days.</span>
+        <div class="post-card__body">
+          <span class="post-card__cat">Industry</span>
+          <h3>Social media management for yachting brands.</h3>
+          <p>What luxury yachting brands need from a content team that generic agencies can't deliver.</p>
+          <div class="post-card__meta">
+            <span>Lisa Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>March 8, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>4 min read</span>
+          </div>
         </div>
       </a>
 
-      <a href="learning-hub-article.html" class="bento-card bento-card--portrait reveal" data-cat="strategy" style="--reveal-delay: 160ms;">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg" alt="Mood board planning for a brand shoot day" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Strategy &middot; February 5</span>
-          <span class="bento-card__title">Why one shoot day beats ten content packs.</span>
+      <a href="case-human-led-visibility.html" class="post-card reveal" data-cat="case-studies">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/2-1.jpg" alt="Human-led content for a Spain relocation brand" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Case study</span>
+          <h3>Human-led visibility, driving qualified demand.</h3>
+          <p>A relocation brand swapped lifestyle stock for founder-led content. Click-throughs lifted 128%.</p>
+          <div class="post-card__meta">
+            <span>Steve Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>February 18, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>6 min read</span>
+          </div>
         </div>
       </a>
 
-      <a href="learning-hub-article.html" class="bento-card bento-card--lead reveal" data-cat="insights" style="--reveal-delay: 240ms;">
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Copy-of-L1006288-scaled.jpg" alt="Editorial style content for a lifestyle brand" class="bento-card__img" />
-        <div class="bento-card__caption">
-          <span class="bento-card__sector">Insights &middot; January 21</span>
-          <span class="bento-card__title">Why £400 freelancers and £4,000 agencies both miss the mark for owner-operators.</span>
-          <span class="bento-card__more">Read the article <span class="arrow">&rarr;</span></span>
+      <a href="case-documentary-authority.html" class="post-card reveal" data-cat="case-studies" style="--reveal-delay: 80ms;">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/2.jpg" alt="Documentary content for a luxury yachting brand" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Case study</span>
+          <h3>Documentary content. Brand authority, in days.</h3>
+          <p>One documentary edit. Ten days. 18.7K organic views from a luxury yachting brand's core audience.</p>
+          <div class="post-card__meta">
+            <span>Lisa Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>February 11, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>5 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="learning-hub-article.html" class="post-card reveal" data-cat="strategy" style="--reveal-delay: 160ms;">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg" alt="Mood board planning for a brand shoot day" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Strategy</span>
+          <h3>Why one shoot day beats ten content packs.</h3>
+          <p>The economics of a directed shoot day versus a steady stream of disconnected freelance deliverables.</p>
+          <div class="post-card__meta">
+            <span>Steve Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>February 5, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>5 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="learning-hub-article.html" class="post-card reveal" data-cat="insights" style="--reveal-delay: 240ms;">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg" alt="Editorial style content for a lifestyle brand" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Insights</span>
+          <h3>Why £400 freelancers and £4,000 agencies both miss the mark for owner-operators.</h3>
+          <p>The two failure modes most owner-led brands run through before they look for a fourth option.</p>
+          <div class="post-card__meta">
+            <span>Lisa Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>January 21, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>8 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="learning-hub-article.html" class="post-card reveal" data-cat="strategy">
+        <div class="post-card__media">
+          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/L1006305-681x1024.jpg" alt="Strategy planning for a content retainer" />
+        </div>
+        <div class="post-card__body">
+          <span class="post-card__cat">Strategy</span>
+          <h3>How much should a £5m brand spend on content in 2026?</h3>
+          <p>Pricing benchmarks for marketing teams shortlisting content partners. What's missing at each tier.</p>
+          <div class="post-card__meta">
+            <span>Steve Corwood</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>January 14, 2026</span>
+            <span class="post-card__sep" aria-hidden="true"></span>
+            <span>7 min read</span>
+          </div>
         </div>
       </a>
     </div>
@@ -312,7 +404,7 @@
     addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;},{passive:true});
     document.addEventListener('mouseleave',()=>{dot.classList.add('is-out');orb.classList.add('is-out');});
     document.addEventListener('mouseenter',()=>{dot.classList.remove('is-out');orb.classList.remove('is-out');});
-    const sel='a, button, .btn, [role="button"], .bento-card, .hub-chip, input';
+    const sel='a, button, .btn, [role="button"], .post-card, .hub-chip, input';
     document.addEventListener('mouseover',e=>{if(e.target.closest(sel)){dot.classList.add('is-active');orb.classList.add('is-active');}});
     document.addEventListener('mouseout',e=>{if(e.target.closest(sel)&&!e.relatedTarget?.closest?.(sel)){dot.classList.remove('is-active');orb.classList.remove('is-active');}});
   })();
@@ -326,7 +418,7 @@
   (function () {
     const chips=document.querySelectorAll('.hub-chip');
     const search=document.getElementById('hub-search');
-    const cards=document.querySelectorAll('.bento-card[data-cat]');
+    const cards=document.querySelectorAll('.post-card[data-cat]');
     let activeCat='all', q='';
     const apply=()=>{
       cards.forEach(c=>{
