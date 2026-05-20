@@ -10,119 +10,26 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="book-page">
 
 <div class="cursor-orb" aria-hidden="true"></div>
 <div class="cursor-dot" aria-hidden="true"></div>
 
-<aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
-  <div class="mobile-menu__bg" aria-hidden="true">
-    <video autoplay muted loop playsinline preload="metadata"><source src="assets/0_Woman_Bathrobe_1920x1080.mp4" type="video/mp4" /></video>
+<!-- ============== PAGE HEAD - logo + microcopy. No nav. No hero. ============== -->
+<header class="book-page__head">
+  <div class="wrap book-page__head-inner">
+    <a href="index.html" class="book-page__brand" aria-label="Fuelled Agency home">
+      <img src="assets/Fuelled-white.png" alt="Fuelled Agency" class="book-page__logo" />
+    </a>
+    <h1 class="book-page__title">Thirty minutes. Straight answer.</h1>
+    <p class="book-page__sub">If content isn't the answer for your business, <em>we'll say so.</em></p>
   </div>
-  <div class="mobile-menu__overlay" aria-hidden="true"></div>
-  <div class="mobile-menu__inner">
-    <div class="mobile-menu__top">
-      <a href="index.html" aria-label="Fuelled Agency home"><img src="assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" /></a>
-      <button class="nav-toggle is-active" id="mobile-menu-close" aria-label="Close menu"><span></span><span></span><span></span></button>
-    </div>
-    <nav class="mobile-menu__nav" aria-label="Mobile primary">
-      <a href="what-we-do.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">01</span>
-        <span class="mobile-menu__link-text">What we do</span>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a href="service-options.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">02</span>
-        <span class="mobile-menu__link-text">Pricing</span>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a href="our-work.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">03</span>
-        <span class="mobile-menu__link-text">Our work</span>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a href="about.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">04</span>
-        <span class="mobile-menu__link-text">About</span>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a href="learning-hub.html" class="mobile-menu__link">
-        <span class="mobile-menu__link-num">05</span>
-        <span class="mobile-menu__link-text">Learning Hub</span>
-        <span class="arrow">&rarr;</span>
-      </a>
-    </nav>
-    <div class="mobile-menu__cta"><a href="book-a-call.html" class="btn">Start a project <span class="arrow">&rarr;</span></a></div>
-    <footer class="mobile-menu__footer">
-      <a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a>
-      <div class="mobile-menu__social"><a href="https://www.instagram.com/fuelledagency">IG</a><a href="https://www.facebook.com/Fuelledagency/">FB</a><a href="https://www.tiktok.com/@fuelledagency">TT</a><a href="https://www.linkedin.com/company/fuelled-agency">LI</a></div>
-    </footer>
-  </div>
-</aside>
+</header>
 
-<!-- ============== HERO - inherits site hero pattern, compact so form is near the fold ============== -->
-<section class="hero hero--compact">
-  <div class="hero__media" aria-hidden="true">
-    <img src="https://fuelledagency.com/wp-content/uploads/2026/02/L1006305-681x1024.jpg" alt="" />
-  </div>
-
-  <header class="site-header">
-    <div class="wrap site-header__inner">
-      <a href="index.html" class="brand" aria-label="Fuelled Agency home">
-        <img src="assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" />
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="what-we-do.html" class="nav-link">What we do</a>
-        <a href="service-options.html" class="nav-link">Pricing</a>
-        <a href="our-work.html" class="nav-link">Our work</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="learning-hub.html" class="nav-link">Learning Hub</a>
-        <a href="book-a-call.html" class="btn" aria-current="page">Let's chat <span class="arrow">&rarr;</span></a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
-      </nav>
-    </div>
-  </header>
-
-  <div class="wrap hero__inner">
-    <span class="hero__badge">What happens on the call</span>
-    <h1 class="hero__headline">
-      Thirty minutes. Straight answer.
-      <em>No proposal-by-stealth.</em>
-    </h1>
-    <p class="hero__sub">
-      If content isn't the answer for your business, <em>we'll say so.</em> Most marketing directors who book this call have already tried in-house, freelance, and one big-agency engagement. You're not early. You're past it.
-    </p>
-    <div class="hero__ctas">
-      <a href="#contact" class="btn">Send the note <span class="arrow">&rarr;</span></a>
-      <a href="our-work.html" class="btn btn--ghost">See the work</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============== ALL TIMES + DIRECT CONTACT ============== -->
-<section class="book-direct" id="contact">
+<!-- ============== ACTION  -  form left, contact right ============== -->
+<section class="book-direct book-direct--lead" id="contact">
   <div class="wrap">
-    <div class="book-direct__inner reveal">
-      <div class="book-direct__copy">
-        <span class="eyebrow">Prefer not to call?</span>
-        <h2>Drop us a line. <em>Same response time.</em></h2>
-        <p>If you'd rather get into the detail in writing first, send a short note. Tell us the business, the website, and the rough thing you're trying to move. We'll come back inside two hours, weekday office hours.</p>
-        <ul class="book-direct__contacts">
-          <li>
-            <span class="book-direct__contact-label">Email</span>
-            <a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a>
-          </li>
-          <li>
-            <span class="book-direct__contact-label">Phone</span>
-            <a href="tel:+447512635363">+44 (0) 7512 635 363</a>
-          </li>
-          <li>
-            <span class="book-direct__contact-label">Studio</span>
-            <span>Mallorca · UK · Mediterranean</span>
-          </li>
-        </ul>
-      </div>
-
+    <div class="book-direct__inner book-direct__inner--form-first reveal">
       <form class="book-form" onsubmit="return false;" novalidate>
         <div class="book-form__row">
           <label class="book-form__field">
@@ -151,54 +58,26 @@
           <button type="submit" class="btn">Send the note <span class="arrow">&rarr;</span></button>
         </div>
       </form>
-    </div>
-  </div>
-</section>
 
-
-<!-- ============== TRUST STRIP  -  testimonial pull + logo wall ============== -->
-<section class="book-trust">
-  <div class="wrap">
-    <figure class="book-trust__quote reveal">
-      <blockquote>
-        <p>"They didn't just turn up with cameras. <em>They helped me build a proper strategy</em> for how to market the days, attract the right drivers, and create excitement before we even opened bookings."</p>
-      </blockquote>
-      <figcaption>
-        <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Screenshot-2026-02-26-at-15.18.49.png" alt="" />
-        <span>
-          <strong>Jerry</strong>
-          <span>Mox Spot</span>
-        </span>
-      </figcaption>
-    </figure>
-
-    <div class="book-trust__logos reveal">
-      <span class="book-trust__logos-label">Trusted by owner-led brands across the UK and Europe</span>
-      <div class="ticker" aria-hidden="true">
-        <div class="ticker__track">
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/visa-copy.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/SSYS-copy-1.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/BikiniIsland.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Food-Tours-Balearics-logo-banner-768x280-copy-1.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/DealerHive.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Concepcio-logo-copy-1.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Hadleys.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/littleKickers.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Zen.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/WhiteHotWedding.png" alt="" class="ticker__logo" />
-          <!-- duplicate for seamless loop -->
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/visa-copy.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/SSYS-copy-1.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/BikiniIsland.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Food-Tours-Balearics-logo-banner-768x280-copy-1.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/DealerHive.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Concepcio-logo-copy-1.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Hadleys.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/littleKickers.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/Zen.png" alt="" class="ticker__logo" />
-          <img src="https://fuelledagency.com/wp-content/uploads/2026/02/WhiteHotWedding.png" alt="" class="ticker__logo" />
-        </div>
-      </div>
+      <aside class="book-direct__copy">
+        <span class="eyebrow">Prefer not to fill a form?</span>
+        <h2>Or reach us <em>direct.</em></h2>
+        <p>We come back inside two hours, weekday office hours. Same founder either way.</p>
+        <ul class="book-direct__contacts">
+          <li>
+            <span class="book-direct__contact-label">Email</span>
+            <a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a>
+          </li>
+          <li>
+            <span class="book-direct__contact-label">Phone</span>
+            <a href="tel:+447512635363">+44 (0) 7512 635 363</a>
+          </li>
+          <li>
+            <span class="book-direct__contact-label">Studio</span>
+            <span>Mallorca · UK · Mediterranean</span>
+          </li>
+        </ul>
+      </aside>
     </div>
   </div>
 </section>
@@ -352,16 +231,6 @@
     if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'));return;}
     const io=new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('is-visible');io.unobserve(en.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:0.08});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  })();
-
-  (function () {
-    const t=document.getElementById('nav-toggle'),c=document.getElementById('mobile-menu-close'),m=document.getElementById('mobile-menu');
-    if(!t||!m)return;
-    const open=()=>{m.classList.add('is-open');m.setAttribute('aria-hidden','false');t.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';};
-    const close=()=>{m.classList.remove('is-open');m.setAttribute('aria-hidden','true');t.setAttribute('aria-expanded','false');document.body.style.overflow='';};
-    t.addEventListener('click',open);c?.addEventListener('click',close);
-    m.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
-    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('is-open'))close();});
   })();
 </script>
 

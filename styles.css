@@ -9038,3 +9038,63 @@
   backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
   z-index: 1;
 }
+
+/* ===================================================================
+   BOOK-A-CALL  -  conversion page top header (no nav, no hero)
+   Centred logo + microcopy. Sits directly above the form.
+   =================================================================== */
+.book-page { background: var(--c-cream); }
+
+.book-page__head {
+  padding-block: clamp(56px, 8vw, 112px) clamp(28px, 4vw, 56px);
+  text-align: center;
+}
+.book-page__head-inner {
+  display: grid; justify-items: center; gap: clamp(20px, 2.4vw, 32px);
+  max-width: 56rem;
+}
+.book-page__brand {
+  display: inline-flex; align-items: center;
+  text-decoration: none;
+}
+.book-page__logo {
+  height: clamp(28px, 3vw, 40px); width: auto; display: block;
+  /* assets ship a white wordmark - invert for use on light cream */
+  filter: brightness(0);
+  opacity: 0.92;
+}
+.book-page__title {
+  font-family: var(--ff-display); font-weight: 500;
+  font-size: clamp(1.6rem, 1.15rem + 1.8vw, 2.6rem); line-height: 1.08;
+  letter-spacing: -0.022em; color: var(--c-text);
+  margin: 0; text-wrap: balance; max-width: 22ch;
+}
+.book-page__sub {
+  font-family: var(--ff-body); font-size: var(--fs-400); line-height: 1.5;
+  color: var(--c-text-soft); margin: 0; max-width: 44ch;
+}
+.book-page__sub em { font-style: italic; color: var(--c-text); }
+
+/* Lead variant of book-direct - reduced top padding because the page-head supplies it */
+.book-direct--lead { padding-block: clamp(8px, 1vw, 16px) clamp(80px, 10vw, 140px); }
+
+/* Form-first inner: form on the left, contact on the right (desktop) */
+.book-direct__inner--form-first { grid-template-columns: 1fr; }
+@media (min-width: 980px) {
+  .book-direct__inner--form-first {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: clamp(56px, 6vw, 112px);
+  }
+}
+/* On mobile, ensure the form sits ABOVE the contact-details column */
+.book-direct__inner--form-first > .book-form { order: 1; }
+.book-direct__inner--form-first > .book-direct__copy { order: 2; }
+@media (min-width: 980px) {
+  .book-direct__inner--form-first > .book-form,
+  .book-direct__inner--form-first > .book-direct__copy { order: initial; }
+}
+
+/* Contact copy reads as a calmer support column, not a competing headline */
+.book-direct__inner--form-first .book-direct__copy h2 {
+  font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem);
+}
