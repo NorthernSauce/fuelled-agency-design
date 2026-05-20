@@ -9040,61 +9040,84 @@
 }
 
 /* ===================================================================
-   BOOK-A-CALL  -  conversion page top header (no nav, no hero)
-   Centred logo + microcopy. Sits directly above the form.
+   BOOK-A-CALL  -  logo-only centred nav + form-and-contact as hero content
    =================================================================== */
 .book-page { background: var(--c-cream); }
 
-.book-page__head {
-  padding-block: clamp(56px, 8vw, 112px) clamp(28px, 4vw, 56px);
-  text-align: center;
+/* Centred-logo nav variant - logo sits dead-centre, no links, no toggle */
+.site-header__inner--centred { justify-content: center; }
+.nav--logo-only { display: none; }
+@media (max-width: 880px) {
+  .nav--logo-only { display: none; }
 }
-.book-page__head-inner {
-  display: grid; justify-items: center; gap: clamp(20px, 2.4vw, 32px);
-  max-width: 56rem;
-}
-.book-page__brand {
-  display: inline-flex; align-items: center;
-  text-decoration: none;
-}
-.book-page__logo {
-  height: clamp(28px, 3vw, 40px); width: auto; display: block;
-  /* assets ship a white wordmark - invert for use on light cream */
-  filter: brightness(0);
-  opacity: 0.92;
-}
-.book-page__title {
-  font-family: var(--ff-display); font-weight: 500;
-  font-size: clamp(1.6rem, 1.15rem + 1.8vw, 2.6rem); line-height: 1.08;
-  letter-spacing: -0.022em; color: var(--c-text);
-  margin: 0; text-wrap: balance; max-width: 22ch;
-}
-.book-page__sub {
-  font-family: var(--ff-body); font-size: var(--fs-400); line-height: 1.5;
-  color: var(--c-text-soft); margin: 0; max-width: 44ch;
-}
-.book-page__sub em { font-style: italic; color: var(--c-text); }
 
-/* Lead variant of book-direct - reduced top padding because the page-head supplies it */
-.book-direct--lead { padding-block: clamp(8px, 1vw, 16px) clamp(80px, 10vw, 140px); }
+/* Hero - book variant. Taller bottom padding to host the form+contact panel. */
+.hero--book {
+  min-height: auto;
+  padding-top: clamp(120px, 14vh, 180px);
+  padding-bottom: clamp(80px, 8vw, 120px);
+}
+.hero__inner--book {
+  gap: clamp(20px, 2.4vw, 32px);
+  align-items: stretch;
+}
+.hero__inner--book > :not(.hero__panel) { align-self: center; }
+.hero__inner--book .hero__headline {
+  font-size: clamp(2.4rem, 1.6rem + 3.2vw, 4.4rem);
+  max-width: 22ch;
+}
+.hero__inner--book .hero__sub {
+  max-width: 52ch;
+}
 
-/* Form-first inner: form on the left, contact on the right (desktop) */
-.book-direct__inner--form-first { grid-template-columns: 1fr; }
+/* Light panel inside the hero - hosts the form on the left + contact on the right */
+.hero__panel {
+  width: 100%;
+  margin-top: clamp(32px, 4vw, 56px);
+  background: var(--c-paper);
+  border: 1px solid var(--c-line);
+  border-radius: clamp(16px, 1.8vw, 28px);
+  padding: clamp(28px, 3.2vw, 56px);
+  text-align: left;
+  display: grid; grid-template-columns: 1fr; gap: clamp(40px, 4vw, 64px);
+  box-shadow: 0 30px 60px -30px oklch(20% 0.025 198 / 0.45);
+}
 @media (min-width: 980px) {
-  .book-direct__inner--form-first {
+  .hero__panel {
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    gap: clamp(56px, 6vw, 112px);
+    gap: clamp(48px, 5vw, 80px);
+    align-items: start;
   }
 }
-/* On mobile, ensure the form sits ABOVE the contact-details column */
-.book-direct__inner--form-first > .book-form { order: 1; }
-.book-direct__inner--form-first > .book-direct__copy { order: 2; }
-@media (min-width: 980px) {
-  .book-direct__inner--form-first > .book-form,
-  .book-direct__inner--form-first > .book-direct__copy { order: initial; }
+/* Form sits inside the panel - remove the form's own card chrome since the panel provides it */
+.hero__panel .book-form {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.book-form__head { display: grid; gap: var(--sp-3); margin-bottom: var(--sp-3); }
+.book-form__heading {
+  font-family: var(--ff-display); font-weight: 500;
+  font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem); line-height: 1.05;
+  letter-spacing: -0.02em; color: var(--c-text); margin: 0;
 }
 
-/* Contact copy reads as a calmer support column, not a competing headline */
-.book-direct__inner--form-first .book-direct__copy h2 {
-  font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem);
+/* Contact-aside scaled down inside the hero panel */
+.hero__panel-aside {
+  border-left: 0;
+  padding-left: 0;
+}
+@media (min-width: 980px) {
+  .hero__panel-aside { border-left: 1px solid var(--c-line); padding-left: clamp(40px, 4vw, 64px); }
+}
+.hero__panel-aside h2 {
+  font-family: var(--ff-display); font-weight: 500;
+  font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem); line-height: 1.05;
+  letter-spacing: -0.02em; color: var(--c-text);
+  margin: var(--sp-4) 0 var(--sp-5);
+}
+.hero__panel-aside h2 em { font-style: italic; color: var(--c-text-soft); }
+.hero__panel-aside p {
+  font-family: var(--ff-body); font-size: var(--fs-300); line-height: 1.55;
+  color: var(--c-text-soft); margin: 0; max-width: 36ch;
 }

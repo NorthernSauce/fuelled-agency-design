@@ -15,22 +15,37 @@
 <div class="cursor-orb" aria-hidden="true"></div>
 <div class="cursor-dot" aria-hidden="true"></div>
 
-<!-- ============== PAGE HEAD - logo + microcopy. No nav. No hero. ============== -->
-<header class="book-page__head">
-  <div class="wrap book-page__head-inner">
-    <a href="index.html" class="book-page__brand" aria-label="Fuelled Agency home">
-      <img src="assets/Fuelled-white.png" alt="Fuelled Agency" class="book-page__logo" />
-    </a>
-    <h1 class="book-page__title">Thirty minutes. Straight answer.</h1>
-    <p class="book-page__sub">If content isn't the answer for your business, <em>we'll say so.</em></p>
+<!-- ============== HERO - logo-only centred nav, hero text + form/contact panel ============== -->
+<section class="hero hero--book" id="contact">
+  <div class="hero__media" aria-hidden="true">
+    <img src="https://fuelledagency.com/wp-content/uploads/2026/03/DSC01246-scaled.jpg" alt="" />
   </div>
-</header>
 
-<!-- ============== ACTION  -  form left, contact right ============== -->
-<section class="book-direct book-direct--lead" id="contact">
-  <div class="wrap">
-    <div class="book-direct__inner book-direct__inner--form-first reveal">
+  <header class="site-header">
+    <div class="wrap site-header__inner site-header__inner--centred">
+      <a href="index.html" class="brand" aria-label="Fuelled Agency home">
+        <img src="assets/Fuelled-white.png" alt="Fuelled Agency" class="brand__logo" />
+      </a>
+      <nav class="nav nav--logo-only" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <div class="wrap hero__inner hero__inner--book">
+    <span class="hero__badge">What happens on the call</span>
+    <h1 class="hero__headline">
+      Thirty minutes. Straight answer.
+      <em>No proposal-by-stealth.</em>
+    </h1>
+    <p class="hero__sub">
+      If content isn't the answer for your business, <em>we'll say so.</em>
+    </p>
+
+    <div class="hero__panel reveal">
       <form class="book-form" onsubmit="return false;" novalidate>
+        <header class="book-form__head">
+          <span class="eyebrow">Tell us what your business actually does</span>
+          <h2 class="book-form__heading">Book the call.</h2>
+        </header>
         <div class="book-form__row">
           <label class="book-form__field">
             <span>First name</span>
@@ -42,24 +57,34 @@
           </label>
         </div>
         <label class="book-form__field">
-          <span>Email</span>
+          <span>Work email</span>
           <input type="email" name="email" placeholder="hello@yourbusiness.com" required />
         </label>
+        <div class="book-form__row">
+          <label class="book-form__field">
+            <span>Company</span>
+            <input type="text" name="company" placeholder="Name + website" required />
+          </label>
+          <label class="book-form__field">
+            <span>Your role</span>
+            <input type="text" name="role" placeholder="Marketing Director, CMO, Other" required />
+          </label>
+        </div>
         <label class="book-form__field">
-          <span>Your business</span>
-          <input type="text" name="business" placeholder="Name + website" required />
+          <span>One line on what your business does</span>
+          <textarea name="business" rows="2" placeholder="Who you sell to, what you sell." required></textarea>
         </label>
         <label class="book-form__field">
-          <span>Tell us what you're trying to move</span>
-          <textarea name="message" rows="4" placeholder="What does the business actually do? What's the goal for the next quarter?" required></textarea>
+          <span>One line on where your content sits today</span>
+          <textarea name="content-state" rows="2" placeholder="In-house? Freelancers? Nothing running?" required></textarea>
         </label>
         <div class="book-form__foot">
-          <p class="book-form__small">No newsletter signup. No third-party sharing. Your details only ever go to the founder.</p>
-          <button type="submit" class="btn">Send the note <span class="arrow">&rarr;</span></button>
+          <p class="book-form__small">We'll review your answers before the call so we can spend 30 minutes on you, not on basics.</p>
+          <button type="submit" class="btn">Book my call <span class="arrow">&rarr;</span></button>
         </div>
       </form>
 
-      <aside class="book-direct__copy">
+      <aside class="book-direct__copy hero__panel-aside">
         <span class="eyebrow">Prefer not to fill a form?</span>
         <h2>Or reach us <em>direct.</em></h2>
         <p>We come back inside two hours, weekday office hours. Same founder either way.</p>
