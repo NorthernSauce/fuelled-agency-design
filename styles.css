@@ -482,6 +482,31 @@
   }
   .hero__rating-stars { color: var(--c-accent); letter-spacing: 0.08em; }
   .hero__rating strong { color: var(--c-on-dark); font-weight: 600; }
+
+  /* ---------- compact variant: archive page headers + book-a-call ---------- */
+  .hero--compact {
+    min-height: clamp(380px, 52vh, 560px);
+    padding-top: clamp(120px, 13vh, 160px);
+    padding-bottom: clamp(48px, 5vw, 72px);
+  }
+  .hero--compact .hero__headline {
+    font-size: clamp(1.9rem, 1rem + 3.4vw, 3.8rem);
+    max-width: 26ch;
+  }
+  .hero--compact .hero__sub {
+    font-size: var(--fs-400);
+    max-width: 52ch;
+  }
+  .hero--compact .hero__inner {
+    gap: var(--sp-6);
+  }
+  @media (max-width: 640px) {
+    .hero--compact {
+      min-height: clamp(320px, 42vh, 440px);
+      padding-top: clamp(100px, 12vh, 140px);
+      padding-bottom: clamp(36px, 6vw, 56px);
+    }
+  }
 }
 
 /* ============================================================
@@ -5834,238 +5859,6 @@
 /* Second row of bento cards on the hub  -  same vocabulary, just spaced from first row */
 .work-bento--alt { margin-top: clamp(12px, 1.4vw, 20px); }
 
-/* Neutralise the v1 .hub-grid / .featured-post / .hub-filter / .hub-news rules
-   so they don't bleed onto this page. */
-.hub-grid, .hub-grid__list, .hub-grid__list--more,
-.hub-filter, .hub-filter__inner, .hub-filter__chips, .hub-filter__chip,
-.hub-filter__search, .hub-filter__search-icon, .hub-filter__feed,
-.featured-post, .featured-post__media, .featured-post__body, .featured-post__badge,
-.featured-post__cat, .featured-post__meta, .featured-post__author, .featured-post__sep,
-.hub-news, .hub-news__head, .hub-news__form, .hub-news__eyebrow {
-  all: unset; display: revert;
-}
-
-/* =================================================================
-   BOOK HERO  -  split: copy left, slot picker widget right
-   ================================================================= */
-.book-hero {
-  background: var(--c-dark);
-  color: var(--c-on-dark);
-  border-radius: clamp(16px, 1.6vw, 28px);
-  margin-bottom: clamp(10px, 1vw, 16px);
-  position: relative;
-  overflow: clip;
-  isolation: isolate;
-  padding-bottom: clamp(80px, 10vw, 140px);
-}
-.book-hero::before {
-  content: "";
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse at 75% 25%, oklch(40% 0.03 198 / 0.45) 0%, transparent 55%),
-    radial-gradient(ellipse at 12% 90%, oklch(35% 0.025 198 / 0.32) 0%, transparent 50%);
-  z-index: -1;
-}
-.book-hero__rotate {
-  position: absolute;
-  left: clamp(20px, 2.4vw, 36px);
-  top: 50%;
-  transform: rotate(-90deg) translateX(50%);
-  transform-origin: left center;
-  font-family: var(--ff-body);
-  font-size: var(--fs-100);
-  font-weight: 600;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--c-on-dark-soft);
-  white-space: nowrap;
-  z-index: 2;
-  pointer-events: none;
-}
-@media (max-width: 880px) { .book-hero__rotate { display: none; } }
-.book-hero__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: clamp(56px, 6vw, 96px);
-  align-items: start;
-  padding-top: clamp(140px, 16vh, 200px);
-  position: relative; z-index: 1;
-}
-@media (min-width: 980px) {
-  .book-hero__inner { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; }
-}
-.book-hero__eyebrow { color: var(--c-accent); }
-.book-hero__headline {
-  font-family: var(--ff-display); font-weight: 500;
-  font-size: clamp(2.6rem, 1.4rem + 6vw, 7rem); line-height: 0.95;
-  letter-spacing: -0.025em; color: var(--c-on-dark);
-  margin: clamp(20px, 2vw, 28px) 0 clamp(20px, 2vw, 28px);
-  text-wrap: balance; max-width: 18ch;
-}
-.book-hero__headline em { font-style: italic; color: var(--c-accent); }
-.book-hero__sub {
-  font-family: var(--ff-body); font-weight: 300;
-  font-size: var(--fs-500); line-height: 1.45;
-  color: var(--c-on-dark-soft);
-  margin: 0 0 clamp(40px, 4vw, 56px); max-width: 50ch;
-}
-.book-hero__sub em { font-style: italic; color: var(--c-on-dark); }
-.book-hero__list {
-  list-style: none; padding: 0; margin: 0;
-  display: grid; gap: var(--sp-6);
-  border-top: 1px solid var(--c-on-dark-faint);
-  padding-top: var(--sp-7);
-  max-width: 52ch;
-}
-.book-hero__list li {
-  display: grid; grid-template-columns: auto 1fr; gap: var(--sp-6);
-  align-items: start;
-}
-.book-hero__list-num {
-  font-family: var(--ff-display); font-style: italic; font-weight: 500;
-  font-size: clamp(1.6rem, 1.2rem + 1vw, 2rem); line-height: 1;
-  color: var(--c-accent); letter-spacing: -0.02em;
-  align-self: start;
-  min-width: 2.4em;
-}
-.book-hero__list-body { display: grid; gap: 4px; }
-.book-hero__list-body strong {
-  font-family: var(--ff-display); font-weight: 500; font-style: italic;
-  font-size: clamp(1.1rem, 0.95rem + 0.5vw, 1.4rem);
-  letter-spacing: -0.012em; color: var(--c-on-dark);
-}
-.book-hero__list-body span {
-  font-family: var(--ff-body); font-size: var(--fs-300); line-height: 1.5;
-  color: var(--c-on-dark-soft);
-}
-
-/* =================================================================
-   BOOKER widget  -  frosted glass card with time-slot grid
-   ================================================================= */
-.booker {
-  background: oklch(15% 0.020 198 / 0.55);
-  border: 1px solid var(--c-on-dark-faint);
-  backdrop-filter: blur(16px);
-  border-radius: var(--r-lg);
-  padding: clamp(20px, 2.4vw, 32px);
-  display: grid; gap: clamp(20px, 2vw, 28px);
-  box-shadow: 0 30px 60px -22px oklch(0% 0 0 / 0.35);
-}
-.booker__head {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: var(--sp-4); flex-wrap: wrap;
-  padding-bottom: clamp(16px, 1.6vw, 20px);
-  border-bottom: 1px solid var(--c-on-dark-faint);
-}
-.booker__head-text { display: grid; gap: 6px; }
-.booker__eyebrow {
-  font-family: var(--ff-body); font-size: var(--fs-100); font-weight: 600;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-accent);
-}
-.booker__duration {
-  font-family: var(--ff-display); font-style: italic; font-weight: 500;
-  font-size: clamp(1.1rem, 0.95rem + 0.4vw, 1.3rem);
-  color: var(--c-on-dark); letter-spacing: -0.012em;
-  display: inline-flex; align-items: center; gap: var(--sp-3);
-}
-.booker__duration-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--c-accent);
-  box-shadow: 0 0 12px var(--c-accent);
-  animation: book-pulse 1.6s ease-in-out infinite;
-}
-@keyframes book-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.55; transform: scale(0.85); }
-}
-.booker__week {
-  appearance: none; cursor: pointer;
-  font-family: var(--ff-body); font-size: var(--fs-100); font-weight: 600;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-on-dark);
-  background: transparent;
-  border: 1px solid var(--c-on-dark-faint);
-  padding: 8px 14px; border-radius: var(--r-pill);
-  display: inline-flex; align-items: center; gap: var(--sp-3);
-  transition: border-color 240ms ease, color 240ms ease;
-}
-.booker__week:hover { border-color: var(--c-accent); color: var(--c-accent); }
-
-.booker__slots {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-3);
-}
-
-.slot {
-  appearance: none; cursor: pointer;
-  background: oklch(20% 0.025 198 / 0.55);
-  border: 1px solid var(--c-on-dark-faint);
-  border-radius: var(--r-md);
-  padding: clamp(14px, 1.4vw, 20px) clamp(14px, 1.4vw, 18px);
-  display: grid; gap: 4px;
-  text-align: left;
-  color: var(--c-on-dark);
-  transition: border-color 240ms ease, background 240ms ease, transform 240ms ease;
-  position: relative;
-}
-.slot:not(.is-available) {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-.slot.is-available:hover {
-  border-color: var(--c-accent);
-  background: oklch(22% 0.025 198 / 0.7);
-  transform: translateY(-1px);
-}
-.slot.is-selected {
-  background: var(--c-accent);
-  border-color: var(--c-accent);
-  color: var(--c-dark-deeper);
-}
-.slot.is-selected .slot__day,
-.slot.is-selected .slot__zone { color: var(--c-dark-deeper); }
-.slot__day {
-  font-family: var(--ff-body); font-size: var(--fs-100); font-weight: 600;
-  letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-on-dark-soft);
-}
-.slot__time {
-  font-family: var(--ff-display); font-style: italic; font-weight: 500;
-  font-size: clamp(1.4rem, 1.1rem + 0.8vw, 1.8rem); line-height: 1;
-  letter-spacing: -0.018em;
-}
-.slot__zone {
-  font-family: var(--ff-body); font-size: var(--fs-100); font-weight: 500;
-  letter-spacing: 0.04em; color: var(--c-on-dark-soft);
-}
-
-.booker__foot {
-  display: grid; gap: var(--sp-4);
-}
-@media (min-width: 540px) {
-  .booker__foot { grid-template-columns: 1fr auto; align-items: center; }
-}
-.booker__more {
-  font-family: var(--ff-body); font-size: var(--fs-100); font-weight: 600;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-on-dark-soft);
-  text-decoration: none;
-  display: inline-flex; align-items: center; gap: var(--sp-3);
-  transition: color 240ms ease, gap 360ms cubic-bezier(0.16, 1, 0.3, 1);
-}
-.booker__more:hover { color: var(--c-accent); gap: var(--sp-4); }
-.booker__cta { width: 100%; justify-content: center; }
-@media (min-width: 540px) { .booker__cta { width: auto; } }
-.booker__cta:disabled {
-  opacity: 0.4; pointer-events: none;
-  filter: grayscale(0.2);
-}
-.booker__note {
-  font-family: var(--ff-body); font-size: var(--fs-100); font-weight: 500;
-  letter-spacing: 0.04em; color: var(--c-on-dark-soft);
-  display: inline-flex; align-items: center; gap: var(--sp-3);
-  margin: 0;
-  padding-top: var(--sp-4);
-  border-top: 1px solid var(--c-on-dark-faint);
-}
-.booker__note-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--c-accent); }
-
 /* =================================================================
    TRUST STRIP  -  testimonial pull + logo wall
    ================================================================= */
@@ -8970,21 +8763,6 @@
    PHASE 4 POLISH - book-a-call / learning-hub / our-work
    Added: 2026-05-20 design pass. Extends existing sections.
    ================================================================= */
-
-/* ---------- BOOK HERO polish ---------- */
-.book-hero__widget .booker { box-shadow: 0 30px 80px -28px oklch(0% 0 0 / 0.55), 0 0 0 1px oklch(100% 0 0 / 0.04); }
-.booker__slots .slot.is-available { position: relative; }
-.booker__slots .slot.is-available::after {
-  content: ""; position: absolute; top: 10px; right: 10px;
-  width: 6px; height: 6px; border-radius: 50%; background: var(--c-accent);
-  box-shadow: 0 0 0 4px oklch(91% 0.18 134 / 0.18);
-}
-.booker__slots .slot.is-selected::after { background: var(--c-dark-deeper); box-shadow: none; }
-.book-hero__list li { transition: transform 280ms cubic-bezier(0.16,1,0.3,1); }
-.book-hero__list li:hover { transform: translateX(4px); }
-.book-hero__list-num {
-  background: linear-gradient(180deg, oklch(98% 0.008 195 / 0.06), oklch(98% 0.008 195 / 0));
-}
 
 /* ---------- BOOK PROMISE - tighter card rhythm ---------- */
 .book-promise__card { transition: transform 360ms cubic-bezier(0.16,1,0.3,1), border-color 240ms ease; }

@@ -60,8 +60,8 @@
   </div>
 </aside>
 
-<!-- ============== HERO - inherits site hero pattern ============== -->
-<section class="hero">
+<!-- ============== HERO - inherits site hero pattern, compact so form is near the fold ============== -->
+<section class="hero hero--compact">
   <div class="hero__media" aria-hidden="true">
     <img src="https://fuelledagency.com/wp-content/uploads/2026/02/L1006305-681x1024.jpg" alt="" />
   </div>
@@ -98,6 +98,63 @@
     </div>
   </div>
 </section>
+
+<!-- ============== ALL TIMES + DIRECT CONTACT ============== -->
+<section class="book-direct" id="contact">
+  <div class="wrap">
+    <div class="book-direct__inner reveal">
+      <div class="book-direct__copy">
+        <span class="eyebrow">Prefer not to call?</span>
+        <h2>Drop us a line. <em>Same response time.</em></h2>
+        <p>If you'd rather get into the detail in writing first, send a short note. Tell us the business, the website, and the rough thing you're trying to move. We'll come back inside two hours, weekday office hours.</p>
+        <ul class="book-direct__contacts">
+          <li>
+            <span class="book-direct__contact-label">Email</span>
+            <a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a>
+          </li>
+          <li>
+            <span class="book-direct__contact-label">Phone</span>
+            <a href="tel:+447512635363">+44 (0) 7512 635 363</a>
+          </li>
+          <li>
+            <span class="book-direct__contact-label">Studio</span>
+            <span>Mallorca · UK · Mediterranean</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="book-form" onsubmit="return false;" novalidate>
+        <div class="book-form__row">
+          <label class="book-form__field">
+            <span>First name</span>
+            <input type="text" name="first" required />
+          </label>
+          <label class="book-form__field">
+            <span>Last name</span>
+            <input type="text" name="last" required />
+          </label>
+        </div>
+        <label class="book-form__field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="hello@yourbusiness.com" required />
+        </label>
+        <label class="book-form__field">
+          <span>Your business</span>
+          <input type="text" name="business" placeholder="Name + website" required />
+        </label>
+        <label class="book-form__field">
+          <span>Tell us what you're trying to move</span>
+          <textarea name="message" rows="4" placeholder="What does the business actually do? What's the goal for the next quarter?" required></textarea>
+        </label>
+        <div class="book-form__foot">
+          <p class="book-form__small">No newsletter signup. No third-party sharing. Your details only ever go to the founder.</p>
+          <button type="submit" class="btn">Send the note <span class="arrow">&rarr;</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 
 <!-- ============== TRUST STRIP  -  testimonial pull + logo wall ============== -->
 <section class="book-trust">
@@ -201,62 +258,6 @@
           <span>Founders &middot; on every first call</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== ALL TIMES + DIRECT CONTACT ============== -->
-<section class="book-direct" id="contact">
-  <div class="wrap">
-    <div class="book-direct__inner reveal">
-      <div class="book-direct__copy">
-        <span class="eyebrow">Prefer not to call?</span>
-        <h2>Drop us a line. <em>Same response time.</em></h2>
-        <p>If you'd rather get into the detail in writing first, send a short note. Tell us the business, the website, and the rough thing you're trying to move. We'll come back inside two hours, weekday office hours.</p>
-        <ul class="book-direct__contacts">
-          <li>
-            <span class="book-direct__contact-label">Email</span>
-            <a href="mailto:hello@fuelledagency.com">hello@fuelledagency.com</a>
-          </li>
-          <li>
-            <span class="book-direct__contact-label">Phone</span>
-            <a href="tel:+447512635363">+44 (0) 7512 635 363</a>
-          </li>
-          <li>
-            <span class="book-direct__contact-label">Studio</span>
-            <span>Mallorca · UK · Mediterranean</span>
-          </li>
-        </ul>
-      </div>
-
-      <form class="book-form" onsubmit="return false;" novalidate>
-        <div class="book-form__row">
-          <label class="book-form__field">
-            <span>First name</span>
-            <input type="text" name="first" required />
-          </label>
-          <label class="book-form__field">
-            <span>Last name</span>
-            <input type="text" name="last" required />
-          </label>
-        </div>
-        <label class="book-form__field">
-          <span>Email</span>
-          <input type="email" name="email" placeholder="hello@yourbusiness.com" required />
-        </label>
-        <label class="book-form__field">
-          <span>Your business</span>
-          <input type="text" name="business" placeholder="Name + website" required />
-        </label>
-        <label class="book-form__field">
-          <span>Tell us what you're trying to move</span>
-          <textarea name="message" rows="4" placeholder="What does the business actually do? What's the goal for the next quarter?" required></textarea>
-        </label>
-        <div class="book-form__foot">
-          <p class="book-form__small">No newsletter signup. No third-party sharing. Your details only ever go to the founder.</p>
-          <button type="submit" class="btn">Send the note <span class="arrow">&rarr;</span></button>
-        </div>
-      </form>
     </div>
   </div>
 </section>
